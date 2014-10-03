@@ -18,6 +18,10 @@ class RecipeAdmin(admin.ModelAdmin):
     filter_horizontal = ('products','tags')
     list_per_page = 25
 
+class ScheduleAdmin(admin.ModelAdmin):
+    list_display = ( '_class','location','date','full')
+    list_filter = ['_class','location','date','full']
+
 class ClassAdmin(admin.ModelAdmin):
     list_display = ('title', 'description')
     list_filter = ['tags']
@@ -37,5 +41,6 @@ admin.site.register(Ingredient, IngredientAdmin)
 admin.site.register(Product)
 admin.site.register(TypeOfCuisine)
 admin.site.register(Tag)
+admin.site.register(Schedule, ScheduleAdmin)
 admin.site.register(Recipe, RecipeAdmin)
 admin.site.register(Class, ClassAdmin)

@@ -140,6 +140,20 @@ class Class(models.Model):
         verbose_name = _("class")
         verbose_name_plural = _("classes")
 
+class Schedule(models.Model):
+    _class = models.ForeignKey(Class, verbose_name=_("class"))
+    location = models.ForeignKey(Location, verbose_name=_("location"))
+    date = models.DateTimeField(_("date"))
+    full = models.BooleanField(_("full"),default=False)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
+    def __unicode__(self):
+        return self._class.title + " at " + self.location.name
+
+    class Meta:
+        verbose_name = _("schedule")
+        verbose_name_plural = _("schedule")
+
 class Ingredient(models.Model):
     recipe = models.ForeignKey(Recipe, verbose_name=_("recipe"))
     name = models.CharField(_("name"), max_length=255)

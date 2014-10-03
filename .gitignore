@@ -102,3 +102,5 @@ $RECYCLE.BIN/
 *.msp
 *.mht
 *.suo
+mydd/class.xml
+mydd/mydd/settings.py
