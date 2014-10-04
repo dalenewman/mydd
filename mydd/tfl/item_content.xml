@@ -1,0 +1,53 @@
+#if($full)
+<div class="alert alert-danger">CLASS IS FULL - CHECK SCHEDULE FOR REPEAT.</div>
+#end
+
+<div class="row">
+  <div class="col-md-2">
+    <strong>Where</strong>
+  </div>
+  <div class="col-md-10">
+    <a href="">$street, $city, $state. / $location_name</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <strong>Instructor</strong>
+  </div>
+  <div class="col-md-10">$instructor_full_name</div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <strong>Class Fee</strong>
+  </div>
+  <div class="col-md-10">$$cost (includes generous tastings and printed recipes)</div>
+</div>
+
+<p></p>
+
+<div class="row">
+  <div class="col-md-1"> </div>
+  <div class="col-md-10">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Menu</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          #foreach( $recipe in $recipes )
+          <li>$recipe.name</li>
+          #end
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1"> </div>
+</div>
+
+<p></p>
+
+<div class="row">
+  <div class="col-md-12">To Register Call: $location_phone</div>
+</div>

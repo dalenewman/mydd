@@ -51,9 +51,15 @@
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="mydd\" />
+    <Folder Include="tfl\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="class.xml">
+    <Content Include="tfl\class_tags.xml" />
+    <Content Include="tfl\item.xml" />
+    <Content Include="tfl\class.xml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="tfl\item_content.xml">
       <SubType>Code</SubType>
     </Content>
     <Content Include="requirements.txt" />

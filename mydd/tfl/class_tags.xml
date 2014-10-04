@@ -1,0 +1,33 @@
+<transformalize>
+  <processes>
+    <add name="ClassTags">
+      <connections>
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="mydd" password="password" />
+        <add name="output" database="TflMyDD" />
+      </connections>
+      <entities>
+        <add name="app_class_tags" alias="ClassTags" prefix="class_tags_" version="class_tags_version" delete="true" >
+          <fields>
+            <add name="id" type="int32" primary-key="true" />
+            <add name="class_id" type="int32" label="class id" />
+            <add name="tag_id" type="int32" label="tag id" />
+          </fields>
+          <calculated-fields>
+            <add name="class_tags_version" type="int" t="concat(class_id,tag_id).hashcode()" />
+          </calculated-fields>
+        </add>
+        <add name="app_tag" alias="Tag" prefix="tag_" version="modified">
+          <fields>
+            <add name="id" type="int32" primary-key="true" />
+            <add name="name" length="128" />
+            <add name="created" type="datetime" />
+            <add name="modified" type="datetime" />
+          </fields>
+        </add>
+      </entities>
+      <relationships>
+        <add left-entity="ClassTags" left-field="tag_id" right-entity="Tag" right-field="tag_id" />
+      </relationships>
+    </add>
+  </processes>
+</transformalize>
