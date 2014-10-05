@@ -8,6 +8,7 @@
       </connections>
       <actions>
         <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_tags.xml" before="true" after="false" />
+        <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_recipes.xml" before="true" after="false" />
       </actions>
       <entities>
         <add name="app_class" alias="Class" prefix="class_" version="modified" delete="true">
@@ -22,7 +23,7 @@
             <add name="modified" type="datetime" />
           </fields>
           <calculated-fields>
-            <add name="title_slug" length="512" t="copy(title).slugify()" />
+            <add name="class_title_slug" length="512" t="copy(title).slugify()" />
           </calculated-fields>
         </add>
         <add name="app_person" alias="Instructor" prefix="instructor_" version="modified" >
@@ -44,12 +45,20 @@
             <add name="TflUpdate" alias="class_tags_version" type="datetime" label="Tfl Update" aggregate="max" />
             <add name="class_tags_class_id" type="int32" label="class tags class id" primary-key="true" aggregate="group" />
             <add name="tag_name" alias="tags" length="128" label="tag name" aggregate="join"/>
-          </fields>          
+          </fields>
+        </add>
+        <add name="ClassRecipesStar" connection="output" alias="ClassRecipes" version="class_recipes_version" delete="true" group="true">
+          <fields>
+            <add name="TflUpdate" alias="class_recipes_version" type="datetime" label="Tfl Update" aggregate="max" />
+            <add name="class_recipes_class_id" type="int32" label="class recipes class id" primary-key="true" aggregate="group" />
+            <add name="recipe_list_item" alias="recipes" length="4000" label="recipe list item" aggregate="join" />
+          </fields>
         </add>
       </entities>
       <relationships>
         <add left-entity="Class" left-field="instructor_id" right-entity="Instructor" right-field="instructor_id" />
         <add left-entity="Class" left-field="id" right-entity="ClassTags" right-field="class_tags_class_id" />
+        <add left-entity="Class" left-field="id" right-entity="ClassRecipes" right-field="class_recipes_class_id" />
       </relationships>
     </add>
   </processes>

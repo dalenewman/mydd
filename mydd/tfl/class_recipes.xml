@@ -1,0 +1,48 @@
+<transformalize>
+  <processes>
+    <add name="ClassRecipes">
+      <connections>
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="mydd" password="password" />
+        <add name="output" database="TflMyDD" />
+      </connections>
+      <entities>
+        <add name="app_class_recipes" alias="ClassRecipes" prefix="class_recipes_" version="class_recipes_version" delete="true">
+          <fields>
+            <add name="id" type="int32" primary-key="true" ></add>
+            <add name="class_id" type="int32" label="class id" ></add>
+            <add name="recipe_id" type="int32" label="recipe id" ></add>
+          </fields>
+          <calculated-fields>
+            <add name="class_recipes_version" type="int" t="concat(class_id,recipe_id).hashcode()" />
+          </calculated-fields>
+        </add>
+        <add name="app_recipe" alias="Recipe" prefix="recipe_" version="modified">
+          <fields>
+            <add name="id" type="int32" primary-key="true" ></add>
+            <add name="author_id" type="int32" label="author id" ></add>
+            <add name="name" length="512" ></add>
+            <add name="description" length="max" ></add>
+            <add name="servings" type="int32" ></add>
+            <add name="active_time" type="int32" label="active time" ></add>
+            <add name="passive_time" type="int32" label="passive time" ></add>
+            <add name="image" length="200" ></add>
+            <add name="type_of_cuisine_id" type="int32" label="type of cuisine id" ></add>
+            <add name="main_ingredient_id" type="int32" label="main ingredient id" ></add>
+            <add name="difficulty" type="int16" ></add>
+            <add name="created" type="datetime" ></add>
+            <add name="modified" type="datetime" ></add>
+          </fields>
+          <calculated-fields>
+            <add name="recipe_name_slug" length="512" t="copy(name).slugify()" />
+            <add name="recipe_uri" length="512" t="format(../{0},recipe_name_slug)" />
+            <add name="recipe_anchor" length="512" t="tag(a,href:recipe_uri,title:recipe_name,content:recipe_name)" raw="true" /> 
+            <add name="recipe_list_item" length="1024" t="tag(li,content:recipe_anchor,class:bug)" raw="true" />
+          </calculated-fields>
+        </add>
+      </entities>
+      <relationships>
+        <add left-entity="ClassRecipes" left-field="recipe_id" right-entity="Recipe" right-field="id" />
+      </relationships>
+    </add>
+  </processes>
+</transformalize>

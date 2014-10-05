@@ -54,12 +54,15 @@
     <Folder Include="tfl\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="tfl\class-orchard.xml" />
+    <Content Include="tfl\class_schedule.xml" />
+    <Content Include="tfl\class_recipes.xml" />
     <Content Include="tfl\class_tags.xml" />
-    <Content Include="tfl\item.xml" />
+    <Content Include="tfl\blog-post.xml" />
     <Content Include="tfl\class.xml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="tfl\item_content.xml">
+    <Content Include="tfl\class_content.xml">
       <SubType>Code</SubType>
     </Content>
     <Content Include="requirements.txt" />
