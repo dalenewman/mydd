@@ -1,0 +1,56 @@
+<transformalize>
+  <processes>
+    <add name="Schedule">
+      
+      <connections>
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="mydd" password="password" />
+        <add name="output" database="TflMyDD" />
+      </connections>
+      
+      <templates>
+        <add name="schedule" file="c:\Code\MyDD\mydd\tfl\templates\schedule.vtl" />
+      </templates>
+
+      <entities>
+        <add name="app_schedule" alias="Schedule" prefix="schedule_" version="modified">
+          <fields>
+            <add name="id" type="int32" primary-key="true" ></add>
+            <add name="_class_id" alias="schedule_class_id" type="int32" label="class id" ></add>
+            <add name="location_id" type="int32" label="location id" ></add>
+            <add name="date" type="datetime" ></add>
+            <add name="created" type="datetime" ></add>
+            <add name="modified" type="datetime" ></add>
+            <add name="full" type="boolean" ></add>
+          </fields>
+          <calculated-fields>
+            <add name="schedule_past" type="boolean" t="js(var now = new Date(); schedule_date &lt; now;,schedule_date)" />
+          </calculated-fields>
+        </add>
+        <add name="app_location" alias="Location" prefix="location_" version="modified">
+          <fields>
+            <add name="id" alias="schedule_location_id" type="int32" primary-key="true" ></add>
+            <add name="name" length="255" ></add>
+            <add name="description" length="1024" ></add>
+            <add name="website" length="200" />
+            <add name="image" length="200" ></add>
+            <add name="street" length="512" ></add>
+            <add name="city" length="255" ></add>
+            <add name="state" length="2" ></add>
+            <add name="zip" length="10" ></add>
+            <add name="phone" length="20" ></add>
+            <add name="created" type="datetime" ></add>
+            <add name="modified" type="datetime" ></add>
+          </fields>
+        </add>
+      </entities>
+      
+      <calculated-fields>
+        <add name="schedule_row" length="2048" t="velocity(schedule,*)" />
+      </calculated-fields>
+      
+      <relationships>
+        <add left-entity="Schedule" left-field="schedule_location_id" right-entity="Location" right-field="schedule_location_id" />
+      </relationships>
+    </add>
+  </processes>
+</transformalize>

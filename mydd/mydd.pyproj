@@ -52,17 +52,19 @@
     <Folder Include="app\templates\app\" />
     <Folder Include="mydd\" />
     <Folder Include="tfl\" />
+    <Folder Include="tfl\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="tfl\class-orchard.xml" />
-    <Content Include="tfl\class_schedule.xml" />
+    <Content Include="tfl\templates\schedule.vtl" />
+    <Content Include="tfl\schedule.xml" />
     <Content Include="tfl\class_recipes.xml" />
     <Content Include="tfl\class_tags.xml" />
-    <Content Include="tfl\blog-post.xml" />
+    <Content Include="tfl\templates\blog-post.vtl" />
     <Content Include="tfl\class.xml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="tfl\class_content.xml">
+    <Content Include="tfl\templates\class.vtl">
       <SubType>Code</SubType>
     </Content>
     <Content Include="requirements.txt" />

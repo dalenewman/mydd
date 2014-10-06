@@ -75,6 +75,7 @@ class Location(models.Model):
     name = models.CharField(_("name"), max_length=255)
     contact = models.ForeignKey(Person, verbose_name="contact", blank=True, null=True)
     description = models.TextField(_("description"), max_length=4096, blank=True, default="")
+    website = models.URLField(_("website"), blank=True, default="")
     image = models.URLField(_("image"), blank=True, default="")
     street = models.CharField(_("street"), max_length=512, blank=True, default="")
     city = models.CharField(_("city"), max_length=255, blank=True, default="")

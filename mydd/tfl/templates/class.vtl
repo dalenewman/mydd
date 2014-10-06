@@ -1,24 +1,30 @@
-<!--<div class="alert alert-danger">CLASS IS FULL - CHECK SCHEDULE FOR REPEAT.</div>-->
-
-<!--<div class="row">
-  <div class="col-md-2">
-    <strong>Where</strong>
+#if($schedule)
+<div class="row">
+  <div class="col-md-12 table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th colspan="4">Schedule</th>
+        </tr>
+      </thead>
+      <tbody>
+        $schedule
+      </tbody>
+    </table>
   </div>
-  <div class="col-md-10">
-    <a href="">$location_street, $location_city, $location_state. / $location_name</a>
-  </div>
-</div>-->
+</div>
+#end
 
 <div class="row">
   <div class="col-md-2">
-    <strong>Instructor</strong>
+    <strong style="padding-left:7px;">Instructor</strong>
   </div>
   <div class="col-md-10">$instructor_full_name</div>
 </div>
 
 <div class="row">
   <div class="col-md-2">
-    <strong>Class Fee</strong>
+    <strong style="padding-left:7px;">Class Fee</strong>
   </div>
   <div class="col-md-10">$$class_cost (includes generous tastings and printed recipes)</div>
 </div>
@@ -41,9 +47,3 @@
   </div>
   <div class="col-md-1"> </div>
 </div>
-
-<!--<p></p>
-
-<div class="row">
-  <div class="col-md-12">To Register Call: $location_phone</div>
-</div>-->

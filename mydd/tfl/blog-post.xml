@@ -1,8 +1,0 @@
-<BlogPost Id="/alias=culinary-classes\/$class_title_slug" Status="Published">
-  <BodyPart Text="$content" />
-  <CommonPart Owner="/User.UserName=dalenewman" Container="/alias=culinary-classes" />
-  <AutoroutePart Alias="culinary-classes/$class_title_slug" UseCustomPattern="false" />
-  <TitlePart Title="$class_title" />
-  <CommentsPart CommentsShown="false" CommentsActive="false" ThreadedComments="false" />
-  <TagsPart Tags="$tags" />
-</BlogPost>

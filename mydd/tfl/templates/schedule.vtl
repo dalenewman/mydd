@@ -1,0 +1,24 @@
+#if(!$schedule_past)
+<tr>
+  <td>
+	<i class="fa fa-calendar" style="padding-right:4px;"> </i> $schedule_date.ToString("dddd, MMM d, yyyy  h tt")
+  </td>
+  <td>
+#if($location_website)
+  <a href="$location_website" target="_blank">$location_name</a>
+#else
+  $location_name
+#end
+  </td>
+  <td>
+    <a href="http://maps.google.com/?q=$location_street+$location_city+$location_state+$location_zip" target="_blank"><i class="fa fa-map-marker"></i> $location_street $location_city, $location_state. $location_zip</a>
+  </td>
+  <td>
+#if($schedule_full)
+<span class="label label-warning">full</span>
+#else
+<span class="label label-info">open</span>
+#end
+  </td>
+</tr>
+#end
