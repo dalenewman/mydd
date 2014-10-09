@@ -55,7 +55,14 @@
     <Folder Include="tfl\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="tfl\recipe-orchard.xml" />
+    <Content Include="tfl\recipe_steps.xml" />
+    <Content Include="tfl\recipe_tags.xml" />
+    <Content Include="tfl\recipe.xml" />
     <Content Include="tfl\class-orchard.xml" />
+    <Content Include="tfl\templates\page.vtl" />
+    <Content Include="tfl\templates\recipe.vtl" />
+    <Content Include="tfl\templates\ingredient.vtl" />
     <Content Include="tfl\templates\schedule.vtl" />
     <Content Include="tfl\schedule.xml" />
     <Content Include="tfl\class_recipes.xml" />

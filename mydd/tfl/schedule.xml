@@ -32,7 +32,6 @@
             <add name="name" length="255" ></add>
             <add name="description" length="1024" ></add>
             <add name="website" length="200" />
-            <add name="image" length="200" ></add>
             <add name="street" length="512" ></add>
             <add name="city" length="255" ></add>
             <add name="state" length="2" ></add>

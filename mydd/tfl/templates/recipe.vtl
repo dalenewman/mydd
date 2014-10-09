@@ -1,0 +1,68 @@
+<h4>by $author_full_name</h4>
+
+#if($recipe_inspiration)
+<p>$recipe_inspiration<p>
+#end
+
+#if($recipe_description != "")
+<h3>Description</h3>
+<p>$recipe_description</p>
+#end
+
+#if($recipe_prep_time > 0)
+<div class="row">
+  <div class="col-md-2 col-sm-4">
+    <i class="fa fa-clock-o"></i> <strong style="padding-left:7px;">Prep Time</strong>:
+  </div>
+  <div class="col-md-2 col-sm-4">$recipe_prep_time minutes</div>
+</div>
+#end
+
+#if($recipe_cook_time > 0)
+<div class="row">
+  <div class="col-md-2 col-sm-4">
+    <i class="fa fa-clock-o"></i> <strong style="padding-left:7px;">Cook Time</strong>:
+  </div>
+  <div class="col-md-2 col-sm-4">$recipe_cook_time minutes</div>
+</div>
+#end
+
+#if($recipe_servings > 0)
+<div class="row">
+  <div class="col-md-2 col-sm-4">
+    <i class="fa fa-cutlery"></i> <strong style="padding-left:7px;">Serves</strong>:
+  </div>
+  <div class="col-md-2 col-sm-4">$recipe_servings</div>
+</div>
+#end
+
+#if($ingredients != "" || $steps != "")
+<style>
+  span.uom {
+  color: #999;
+  font-size: 11px;
+  text-transform: uppercase;
+  }
+</style>
+<div class="row">
+  <div class="col-md-1"> </div>
+  <div class="col-md-10">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Recipe</h3>
+      </div>
+      <div class="panel-body">
+        <h4>Ingredients</h4>
+        <ul>
+          $ingredients
+        </ul>
+        <h4>Directions</h4>
+        <ul>
+          $steps
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1"> </div>
+</div>
+#end

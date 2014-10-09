@@ -1,15 +1,18 @@
 <transformalize>
   <processes>
     <add name="Class">
+      
       <connections>
         <add name="input" provider="postgresql" port="5432" database="MyDD" user="mydd" password="password" />
         <add name="output" database="TflMyDD" />
       </connections>
+      
       <actions>
         <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_tags.xml" before="true" after="false" />
         <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_recipes.xml" before="true" after="false" />
         <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\schedule.xml" before="true" after="true" />
       </actions>
+      
       <entities>
         <add name="app_class" alias="Class" prefix="class_" version="modified" delete="true">
           <fields>
@@ -108,6 +111,7 @@
           </calculated-fields>
         </add>
       </entities>
+      
       <relationships>
         <add left-entity="Class" left-field="instructor_id" right-entity="Instructor" right-field="instructor_id" />
         <add left-entity="Class" left-field="id" right-entity="ClassTags" right-field="class_tags_class_id" />
@@ -116,6 +120,7 @@
         <add left-entity="Class" left-field="id" right-entity="NextScheduleDate" right-field="next_class_id" />
         <add left-entity="Class" left-field="id" right-entity="PrevScheduleDate" right-field="prev_class_id" />
       </relationships>
+      
     </add>
   </processes>
 </transformalize>

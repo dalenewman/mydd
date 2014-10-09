@@ -6,15 +6,14 @@
         <add name="output" database="TflMyDD" />
       </connections>
       <entities>
-        <add name="app_class_recipes" alias="ClassRecipes" prefix="class_recipes_" version="class_recipes_version" delete="true">
+        <add name="app_class_recipes" alias="ClassRecipes" prefix="class_recipes_" version="modified" delete="true">
           <fields>
             <add name="id" type="int32" primary-key="true" ></add>
             <add name="class_id" type="int32" label="class id" ></add>
             <add name="recipe_id" type="int32" label="recipe id" ></add>
+            <add name="created" type="datetime" ></add>
+            <add name="modified" type="datetime"/>
           </fields>
-          <calculated-fields>
-            <add name="class_recipes_version" type="int" t="concat(class_id,recipe_id).hashcode()" />
-          </calculated-fields>
         </add>
         <add name="app_recipe" alias="Recipe" prefix="recipe_" version="modified">
           <fields>
@@ -23,11 +22,8 @@
             <add name="name" length="512" ></add>
             <add name="description" length="max" ></add>
             <add name="servings" type="int32" ></add>
-            <add name="active_time" type="int32" label="active time" ></add>
-            <add name="passive_time" type="int32" label="passive time" ></add>
-            <add name="image" length="200" ></add>
-            <add name="type_of_cuisine_id" type="int32" label="type of cuisine id" ></add>
-            <add name="main_ingredient_id" type="int32" label="main ingredient id" ></add>
+            <add name="prep_time" type="int32" label="prep time" ></add>
+            <add name="cook_time" type="int32" label="cook time" ></add>
             <add name="difficulty" type="int16" ></add>
             <add name="created" type="datetime" ></add>
             <add name="modified" type="datetime" ></add>

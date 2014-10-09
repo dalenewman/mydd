@@ -1,0 +1,110 @@
+<transformalize>
+  <processes>
+    <add name="Recipe">
+      
+      <connections>
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="mydd" password="password" />
+        <add name="output" database="TflMyDD" />
+      </connections>
+
+      <templates>
+        <add name="ingredient" file="c:\Code\MyDD\mydd\tfl\templates\ingredient.vtl" />
+      </templates>
+
+      <actions>
+        <add action="tfl" url="c:\Code\MyDD\mydd\tfl\recipe_tags.xml" before="true" after="false">
+          <modes>
+            <add mode="first" />
+            <add mode="default" />
+          </modes>
+        </add>
+      </actions>
+      
+      <entities>
+        <add name="app_recipe" alias="Recipe" prefix="recipe_" delete="true" version="modified">
+          <fields>
+            <add name="id" type="int32" primary-key="true" ></add>
+            <add name="author_id" type="int32" label="author id" ></add>
+            <add name="name" length="512" ></add>
+            <add name="description" length="max" t="trim()" />
+            <add name="servings" type="int32" ></add>
+            <add name="prep_time" type="int32" label="prep time" ></add>
+            <add name="cook_time" type="int32" label="cook time" ></add>
+            <add name="difficulty" type="int16" ></add>
+            <add name="inspiration" length="512" ></add>
+            <add name="created" type="datetime" ></add>
+            <add name="modified" type="datetime" ></add>
+          </fields>
+          <calculated-fields>
+            <add name="recipe_name_slug" length="512" t="copy(name).slugify()" />
+          </calculated-fields>
+        </add>
+        <add name="app_person" alias="Author" prefix="author_" version="modified" >
+          <fields>
+            <add name="id" type="int32" primary-key="true" />
+            <add name="first" length="128" />
+            <add name="last" length="128" />
+            <add name="avatar" length="200" />
+            <add name="bio" length="max" />
+            <add name="created" type="datetime" />
+            <add name="modified" type="datetime" />
+          </fields>
+          <calculated-fields>
+            <add name="author_full_name" length="128" t="join( ,first,last)" />
+          </calculated-fields>
+        </add>
+        <add name="RecipeTagsStar" connection="output" alias="RecipeTags" version="recipe_tags_version" group="true">
+          <fields>
+            <add name="TflUpdate" alias="recipe_tags_version" type="datetime" label="Tfl Update" aggregate="max" />
+            <add name="recipe_tags_recipe_id" type="int32" primary-key="true" aggregate="group" />
+            <add name="tag_name" alias="tags" length="255" label="tag name" aggregate="join" t="trim()"/>
+          </fields>
+        </add>
+        <add name="app_step" alias="Steps" prefix="step_" version="modified" group="true">
+          <fields>
+            <add name="recipe_id" type="int32" label="recipe id" primary-key="true" aggregate="group"/>
+            <add name="sequence" type="int16" sort="asc" output="false"/>
+            <add name="description" length="2048" output="false" />
+            <add name="modified" type="datetime" output="false" aggregate="max" />
+          </fields>
+          <calculated-fields>
+            <add name="steps" length="2048" aggregate="concat">
+              <transforms>
+                <add method="tag" tag="li" before-aggregation="true" after-aggregation="false">
+                  <parameters>
+                    <add name="content" field="step_description" />
+                  </parameters>
+                </add>
+                <add method="trim" />
+              </transforms>
+            </add>
+          </calculated-fields>
+        </add>
+        <add name="app_ingredient" alias="Ingredients" prefix="ingredient_" version="modified" group="true">
+          <fields>
+            <add name="recipe_id" type="int32" label="recipe id" primary-key="true" aggregate="group" />
+            <add name="name" length="255" output="false" />
+            <add name="quantity" output="false" />
+            <add name="uom" length="128" output="false" />
+            <add name="modified" type="datetime" aggregate="max" />
+          </fields>
+          <calculated-fields>
+            <add name="ingredients" length="1024" aggregate="concat">
+              <transforms>
+                <add method="velocity" template="ingredient" before-aggregation="true" after-aggregation="false" parameter="*" />
+                <add method="trim" />
+              </transforms>
+            </add>
+          </calculated-fields>
+        </add>
+      </entities>
+      
+      <relationships>
+        <add left-entity="Recipe" left-field="author_id" right-entity="Author" right-field="author_id" />
+        <add left-entity="Recipe" left-field="recipe_id" right-entity="RecipeTags" right-field="recipe_tags_recipe_id" />
+        <add left-entity="Recipe" left-field="recipe_id" right-entity="Steps" right-field="step_recipe_id" />
+        <add left-entity="Recipe" left-field="recipe_id" right-entity="Ingredients" right-field="ingredient_recipe_id" />
+      </relationships>
+    </add>
+  </processes>
+</transformalize>
