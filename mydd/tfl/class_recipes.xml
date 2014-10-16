@@ -13,6 +13,7 @@
             <add name="recipe_id" type="int32" label="recipe id" ></add>
             <add name="created" type="datetime" ></add>
             <add name="modified" type="datetime"/>
+            <add name="TflDeleted" input="false" type="bool" default="false" />
           </fields>
         </add>
         <add name="app_recipe" alias="Recipe" prefix="recipe_" version="modified">

@@ -3,7 +3,7 @@
   <BodyPart Text="$content" />
   <CommonPart Owner="/User.UserName=dalenewman"
               Container="/alias=culinary-classes"
-#if($next_schedule_date.Year == 9999)
+#if($next_schedule_date.Year() == 9999)
               CreatedUtc="$prev_schedule_date_utc" />
 #else
               CreatedUtc="$next_schedule_date_utc" />

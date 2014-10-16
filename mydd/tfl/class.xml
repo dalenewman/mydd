@@ -18,7 +18,6 @@
           <fields>
             <add name="id" type="int32" primary-key="true" />
             <add name="title" length="512" />
-            <add name="image" length="255" />
             <add name="description" length="max" />
             <add name="cost" type="decimal" precision="6" scale="2" />
             <add name="instructor_id" type="int32" label="instructor id" />

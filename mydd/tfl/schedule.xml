@@ -15,7 +15,7 @@
         <add name="app_schedule" alias="Schedule" prefix="schedule_" version="modified">
           <fields>
             <add name="id" type="int32" primary-key="true" ></add>
-            <add name="_class_id" alias="schedule_class_id" type="int32" label="class id" ></add>
+            <add name="class_id" alias="schedule_class_id" type="int32" label="class id" ></add>
             <add name="location_id" type="int32" label="location id" ></add>
             <add name="date" type="datetime" ></add>
             <add name="created" type="datetime" ></add>

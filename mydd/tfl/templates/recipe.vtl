@@ -1,4 +1,4 @@
-<h4>by $author_full_name</h4>
+<div class="pull-left">by $author_full_name</div>
 
 #if($recipe_inspiration)
 <p>$recipe_inspiration<p>
@@ -9,30 +9,25 @@
 <p>$recipe_description</p>
 #end
 
-#if($recipe_prep_time > 0)
-<div class="row">
-  <div class="col-md-2 col-sm-4">
-    <i class="fa fa-clock-o"></i> <strong style="padding-left:7px;">Prep Time</strong>:
-  </div>
-  <div class="col-md-2 col-sm-4">$recipe_prep_time minutes</div>
-</div>
-#end
-
-#if($recipe_cook_time > 0)
-<div class="row">
-  <div class="col-md-2 col-sm-4">
-    <i class="fa fa-clock-o"></i> <strong style="padding-left:7px;">Cook Time</strong>:
-  </div>
-  <div class="col-md-2 col-sm-4">$recipe_cook_time minutes</div>
-</div>
-#end
-
-#if($recipe_servings > 0)
-<div class="row">
-  <div class="col-md-2 col-sm-4">
-    <i class="fa fa-cutlery"></i> <strong style="padding-left:7px;">Serves</strong>:
-  </div>
-  <div class="col-md-2 col-sm-4">$recipe_servings</div>
+#if($recipe_prep_time > 0 || $recipe_cook_time > 0 || $recipe_services > 0)
+<div class="pull-right">
+  <ul class="list-unstyled">
+    #if($recipe_prep_time > 0)
+    <li>
+      <i class="fa fa-clock-o"></i> Prep Time: <span class="badge alert-warning">$recipe_prep_time</span> minutes
+    </li>
+    #end
+    #if($recipe_cook_time > 0)
+    <li>
+      <i class="fa fa-clock-o"></i> Cook Time: <span class="badge alert-danger">$recipe_cook_time</span> minutes
+    </li>
+    #end
+    #if($recipe_servings > 0)
+    <li>
+      <i class="fa fa-cutlery"></i> Serves: <span class="badge alert-success">$recipe_servings</span>
+    </li>
+    #end
+  </ul>
 </div>
 #end
 
@@ -45,8 +40,7 @@
   }
 </style>
 <div class="row">
-  <div class="col-md-1"> </div>
-  <div class="col-md-10">
+  <div class="col-md-12">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Recipe</h3>
@@ -57,12 +51,11 @@
           $ingredients
         </ul>
         <h4>Directions</h4>
-        <ul>
+        <ol>
           $steps
-        </ul>
+        </ol>
       </div>
     </div>
   </div>
-  <div class="col-md-1"> </div>
 </div>
 #end
