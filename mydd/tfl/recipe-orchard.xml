@@ -13,7 +13,8 @@
       </templates>
       
       <actions>
-        <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\recipe.xml" before="true" after="false" />
+        <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\recipe.xml?Mode=init" before="true" after="false" />
+        <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\recipe.xml?Mode=first" before="true" after="false" />
         <add action="open" file="c:\temp\recipe-output.xml">
           <modes>
             <add mode="first" />

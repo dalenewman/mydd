@@ -3,7 +3,7 @@
     <add name="Recipe">
       
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="mydd" password="password" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="" />
         <add name="output" database="TflMyDD" />
       </connections>
 
@@ -89,7 +89,7 @@
             <add name="modified" type="datetime" aggregate="max" />
           </fields>
           <calculated-fields>
-            <add name="ingredients" length="1024" aggregate="concat">
+            <add name="ingredients" length="4000" aggregate="concat">
               <transforms>
                 <add method="velocity" template="ingredient" before-aggregation="true" after-aggregation="false" parameter="*" />
                 <add method="trim" />

@@ -1,12 +1,16 @@
-<div class="pull-left">by $author_full_name</div>
+<div itemscope="" itemtype="http://data-vocabulary.org/Recipe">
+  
+<div class="pull-left">
+  <span itemprop="name">$recipe_name</span> by <span itemprop="author">$author_full_name</span>
+</div>
 
 #if($recipe_inspiration)
-<p>$recipe_inspiration<p>
+<p>$recipe_inspiration</p>
 #end
 
 #if($recipe_description != "")
 <h3>Description</h3>
-<p>$recipe_description</p>
+<p itemprop="summary">$recipe_description</p>
 #end
 
 #if($recipe_prep_time > 0 || $recipe_cook_time > 0 || $recipe_services > 0)
@@ -14,17 +18,19 @@
   <ul class="list-unstyled">
     #if($recipe_prep_time > 0)
     <li>
-      <i class="fa fa-clock-o"></i> Prep Time: <span class="badge alert-warning">$recipe_prep_time</span> minutes
+      <i class="fa fa-clock-o"></i> Prep Time: <span class="badge alert-warning">$recipe_prep_time</span> min
+      <meta itemprop="prepTime" content="PT0H${recipe_prep_time}M"/>
     </li>
     #end
     #if($recipe_cook_time > 0)
     <li>
-      <i class="fa fa-clock-o"></i> Cook Time: <span class="badge alert-danger">$recipe_cook_time</span> minutes
+      <i class="fa fa-clock-o"></i> Cook Time: <span class="badge alert-danger">$recipe_cook_time</span> min
+      <meta itemprop="cookTime" content="PT0H${recipe_cook_time}M"/>
     </li>
     #end
     #if($recipe_servings > 0)
     <li>
-      <i class="fa fa-cutlery"></i> Serves: <span class="badge alert-success">$recipe_servings</span>
+      <i class="fa fa-cutlery"></i> Serves: <span class="badge alert-success" itemprop="yield">$recipe_servings</span>
     </li>
     #end
   </ul>
@@ -32,13 +38,6 @@
 #end
 
 #if($ingredients != "" || $steps != "")
-<style>
-  span.uom {
-  color: #999;
-  font-size: 11px;
-  text-transform: uppercase;
-  }
-</style>
 <div class="row">
   <div class="col-md-12">
     <div class="panel panel-default">
@@ -51,7 +50,7 @@
           $ingredients
         </ul>
         <h4>Directions</h4>
-        <ol>
+        <ol itemprop="instructions">
           $steps
         </ol>
       </div>
@@ -59,3 +58,5 @@
   </div>
 </div>
 #end
+
+</div>

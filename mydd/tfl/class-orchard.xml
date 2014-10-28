@@ -39,6 +39,8 @@
             <add name="next_schedule_date" type="datetime" output="false" />
             <add name="next_schedule_date_utc" type="datetime" output="false" />
             <add name="prev_schedule_date_utc" type="datetime" output="false" />
+            <add name="carousel_images" length="4000" output="false" />
+            <add name="carousel_image_count" type="int" default="0" output="false" />
           </fields>
           <calculated-fields>
             <add name="content" length="max" t="velocity(class,*).htmlencode()" primary-key="true" output="false" />

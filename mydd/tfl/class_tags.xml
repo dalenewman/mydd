@@ -2,7 +2,7 @@
   <processes>
     <add name="ClassTags">
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="mydd" password="password" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="" />
         <add name="output" database="TflMyDD" />
       </connections>
       <entities>

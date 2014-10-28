@@ -21,6 +21,8 @@ class Image(models.Model):
     credits = models.CharField(_("credits"), max_length=512, blank=True, default="")
     caption = models.CharField(_("caption"), max_length=1024, blank=True, default="")
     description = models.TextField(_("description"), max_length=4096, blank=True, default="")
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
         return self.title

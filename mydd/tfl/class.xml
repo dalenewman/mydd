@@ -3,12 +3,13 @@
     <add name="Class">
       
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="mydd" password="password" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="" />
         <add name="output" database="TflMyDD" />
       </connections>
       
       <actions>
         <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_tags.xml" before="true" after="false" />
+        <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_images.xml" before="true" after="false" />
         <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_recipes.xml" before="true" after="false" />
         <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\schedule.xml" before="true" after="true" />
       </actions>
@@ -42,13 +43,24 @@
             <add name="instructor_full_name" length="128" t="join( ,first,last)" />
           </calculated-fields>
         </add>
+        
         <add name="ClassTagsStar" connection="output" alias="ClassTags" version="class_tags_version" delete="true" group="true">
           <fields>
             <add name="TflUpdate" alias="class_tags_version" type="datetime" label="Tfl Update" aggregate="max" />
             <add name="class_tags_class_id" type="int32" label="class tags class id" primary-key="true" aggregate="group" />
-            <add name="tag_name" alias="tags" length="128" label="tag name" aggregate="join"/>
+            <add name="tag_name" alias="tags" length="255" label="tag name" aggregate="join"/>
           </fields>
         </add>
+
+        <add name="ClassImagesStar" connection="output" alias="ClassImages" version="class_images_version" delete="true" group="true">
+          <fields>
+            <add name="TflUpdate" alias="class_images_version" type="datetime" label="Tfl Update" aggregate="max" />
+            <add name="class_images_class_id" type="int32" label="class images class id" primary-key="true" aggregate="group" />
+            <add name="image_carousel_item" alias="carousel_images" length="4000" aggregate="join" delimiter=" "/>
+            <add name="carousel_image_count" input="false" type="int" default="0" aggregate="count" />
+          </fields>
+        </add>
+
         <add name="ClassRecipesStar" connection="output" alias="ClassRecipes" version="class_recipes_version" delete="true" group="true">
           <fields>
             <add name="TflUpdate" alias="class_recipes_version" type="datetime" label="Tfl Update" aggregate="max" />
@@ -114,6 +126,7 @@
       <relationships>
         <add left-entity="Class" left-field="instructor_id" right-entity="Instructor" right-field="instructor_id" />
         <add left-entity="Class" left-field="id" right-entity="ClassTags" right-field="class_tags_class_id" />
+        <add left-entity="Class" left-field="id" right-entity="ClassImages" right-field="class_images_class_id" />
         <add left-entity="Class" left-field="id" right-entity="ClassRecipes" right-field="class_recipes_class_id" />
         <add left-entity="Class" left-field="id" right-entity="ClassSchedule" right-field="schedule_class_id" />
         <add left-entity="Class" left-field="id" right-entity="NextScheduleDate" right-field="next_class_id" />
