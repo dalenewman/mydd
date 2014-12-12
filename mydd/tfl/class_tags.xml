@@ -1,10 +1,16 @@
 <transformalize>
   <processes>
-    <add name="ClassTags">
+    <add name="ClassTags" mode="@(Mode)">
+
+      <parameters>
+        <add name="Mode" value="default" />
+      </parameters>
+      
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="*" password="*" />
         <add name="output" database="TflMyDD" />
       </connections>
+      
       <entities>
         <add name="app_class_tags" alias="ClassTags" prefix="class_tags_" version="modified" delete="true" >
           <fields>

@@ -1,17 +1,21 @@
 <transformalize>
   <processes>
-    <add name="Class">
+    <add name="Class" mode="@(Mode)">
+
+      <parameters>
+        <add name="Mode" value="default" />
+      </parameters>
       
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="*" password="*" />
         <add name="output" database="TflMyDD" />
       </connections>
       
       <actions>
-        <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_tags.xml" before="true" after="false" />
-        <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_images.xml" before="true" after="false" />
-        <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\class_recipes.xml" before="true" after="false" />
-        <add action="tfl" mode="*" url="c:\Code\MyDD\mydd\tfl\schedule.xml" before="true" after="true" />
+        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\class_tags.xml?Mode=@(Mode)" before="true" after="false" />
+        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\class_images.xml?Mode=@(Mode)" before="true" after="false" />
+        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\class_recipes.xml?Mode=@(Mode)" before="true" after="false" />
+        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\schedule.xml?Mode=@(Mode)" before="true" after="true" />
       </actions>
       
       <entities>

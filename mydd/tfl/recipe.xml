@@ -1,9 +1,13 @@
 <transformalize>
   <processes>
-    <add name="Recipe">
+    <add name="Recipe" mode="@(Mode)">
+
+      <parameters>
+        <add name="Mode" value="default" />
+      </parameters>
       
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="*" password="*" />
         <add name="output" database="TflMyDD" />
       </connections>
 
@@ -12,12 +16,7 @@
       </templates>
 
       <actions>
-        <add action="tfl" url="c:\Code\MyDD\mydd\tfl\recipe_tags.xml" before="true" after="false">
-          <modes>
-            <add mode="first" />
-            <add mode="default" />
-          </modes>
-        </add>
+        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\recipe_tags.xml?Mode=@(Mode)" before="true" after="false" />
       </actions>
       
       <entities>
