@@ -1,24 +1,26 @@
 <transformalize>
-  <processes>
-    <add name="Recipe" mode="@(Mode)">
 
-      <parameters>
-        <add name="Mode" value="default" />
-      </parameters>
-      
+  <processes>
+    <add name="Recipe" mode="@(Mode)" parallel="false" pipeline-threading="SingleThreaded">
+
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="*" password="*" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="*" />
         <add name="output" database="TflMyDD" />
       </connections>
 
-      <templates>
-        <add name="ingredient" file="c:\Code\MyDD\mydd\tfl\templates\ingredient.vtl" />
-      </templates>
-
       <actions>
-        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\recipe_tags.xml?Mode=@(Mode)" before="true" after="false" />
+        <add action="tfl" mode="@(Mode)" file="c:\Code\MyDD\mydd\tfl\recipe_tags.xml?Mode=@(Mode)" before="true" after="false" />
+
+        <add action="tfl" mode="@(Mode)" url="C:\Code\mydd\mydd\tfl\recipe_steps_to_xml.xml?Mode=@(Mode)" before="true" after="false" />
+        <add action="tfl" mode="@(Mode)" url="C:\Code\mydd\mydd\tfl\recipe_steps_add.xml?Mode=@(Mode)" before="true" after="false" />
+        <add action="tfl" mode="@(Mode)" url="C:\Code\mydd\mydd\tfl\recipe_steps_flat.xml?Mode=@(Mode)" before="true" after="false" />
+        
+        <add action="tfl" mode="@(Mode)" url="C:\Code\mydd\mydd\tfl\recipe_ingredients_to_xml.xml?Mode=@(Mode)" before="true" after="false" />
+        <add action="tfl" mode="@(Mode)" url="C:\Code\mydd\mydd\tfl\recipe_ingredients_add.xml?Mode=@(Mode)" before="true" after="false" />
+        <add action="tfl" mode="@(Mode)" url="C:\Code\mydd\mydd\tfl\recipe_ingredients_flat.xml?Mode=@(Mode)" before="true" after="false" />
+
       </actions>
-      
+
       <entities>
         <add name="app_recipe" alias="Recipe" prefix="recipe_" delete="true" version="modified">
           <fields>
@@ -59,45 +61,20 @@
             <add name="tag_name" alias="tags" length="255" label="tag name" aggregate="join" t="trim()"/>
           </fields>
         </add>
-        <add name="app_step" alias="Steps" prefix="step_" version="modified" group="true">
+        <add name="RecipeStepsFlatRecipeStepsAddElement" connection="output" alias="Steps" >
           <fields>
-            <add name="recipe_id" type="int32" label="recipe id" primary-key="true" aggregate="group"/>
-            <add name="sequence" type="int16" sort="asc" output="false"/>
-            <add name="description" length="2048" output="false" />
-            <add name="modified" type="datetime" output="false" aggregate="max" />
+            <add name="id" alias="step_recipe_id" type="int32" label="recipe id" primary-key="true"/>
+            <add name="content" alias="step_content" length="max"/>
           </fields>
-          <calculated-fields>
-            <add name="steps" length="2048" aggregate="concat">
-              <transforms>
-                <add method="tag" tag="li" before-aggregation="true" after-aggregation="false">
-                  <parameters>
-                    <add name="content" field="step_description" />
-                  </parameters>
-                </add>
-                <add method="trim" />
-              </transforms>
-            </add>
-          </calculated-fields>
         </add>
-        <add name="app_ingredient" alias="Ingredients" prefix="ingredient_" version="modified" group="true">
+        <add name="RecipeIngredientsFlatRecipeIngredientsAddElement" connection="output" alias="Ingredients" >
           <fields>
-            <add name="recipe_id" type="int32" label="recipe id" primary-key="true" aggregate="group" />
-            <add name="name" length="255" output="false" />
-            <add name="quantity" output="false" />
-            <add name="uom" length="128" output="false" />
-            <add name="modified" type="datetime" aggregate="max" />
+            <add name="id" alias="ingredient_recipe_id" type="int32" label="recipe id" primary-key="true"/>
+            <add name="content" alias="ingredient_content" length="max"/>
           </fields>
-          <calculated-fields>
-            <add name="ingredients" length="4000" aggregate="concat">
-              <transforms>
-                <add method="velocity" template="ingredient" before-aggregation="true" after-aggregation="false" parameter="*" />
-                <add method="trim" />
-              </transforms>
-            </add>
-          </calculated-fields>
         </add>
       </entities>
-      
+
       <relationships>
         <add left-entity="Recipe" left-field="author_id" right-entity="Author" right-field="author_id" />
         <add left-entity="Recipe" left-field="recipe_id" right-entity="RecipeTags" right-field="recipe_tags_recipe_id" />

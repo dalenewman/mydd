@@ -1,13 +1,18 @@
 <transformalize>
-  <processes>
-    <add name="Class" mode="@(Mode)">
-
+  
+  <environments>
+    <add name="one">
       <parameters>
         <add name="Mode" value="default" />
-      </parameters>
+      </parameters>      
+    </add>
+  </environments>
+  
+  <processes>
+    <add name="Class" mode="@(Mode)" parallel="false">
       
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="*" password="*" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="devdev1!" />
         <add name="output" database="TflMyDD" />
       </connections>
       
@@ -79,14 +84,13 @@
             <add name="schedule_row" alias="schedule" length="4000" aggregate="concat" />
           </fields>
         </add>
-        <add name="NextScheduleDate" connection="output" >
-          <sql-override sql="
+        <add name="NextScheduleDate" connection="output" query=" 
             SELECT
               s.schedule_class_id AS next_class_id,
               MIN(schedule_date) AS next_schedule_date
             FROM dbo.ScheduleSchedule s
             WHERE s.schedule_date &gt; GETDATE()
-            GROUP BY s.schedule_class_id;" />
+            GROUP BY s.schedule_class_id;">
           <fields>
             <add name="next_class_id" type="int32" primary-key="true" />
             <add name="next_schedule_date" type="datetime" />
@@ -102,14 +106,13 @@
             </add>
           </calculated-fields>
         </add>
-        <add name="PrevScheduleDate" connection="output" >
-          <sql-override sql="
+        <add name="PrevScheduleDate" connection="output" query=" 
             SELECT
               s.schedule_class_id AS prev_class_id,
               MIN(schedule_date) AS prev_schedule_date
             FROM dbo.ScheduleSchedule s
             WHERE s.schedule_date &lt; GETDATE()
-            GROUP BY s.schedule_class_id;" />
+            GROUP BY s.schedule_class_id;" >
           <fields>
             <add name="prev_class_id" type="int32" primary-key="true" />
             <add name="prev_schedule_date" type="datetime" />

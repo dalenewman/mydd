@@ -37,7 +37,7 @@
 </div>
 #end
 
-#if($ingredients != "" || $steps != "")
+#if($ingredient_content != "" || $step_content != "")
 <div class="row">
   <div class="col-md-12">
     <div class="panel panel-default">
@@ -45,14 +45,8 @@
         <h3 class="panel-title">Recipe</h3>
       </div>
       <div class="panel-body">
-        <h4>Ingredients</h4>
-        <ul>
-          $ingredients
-        </ul>
-        <h4>Directions</h4>
-        <ol itemprop="instructions">
-          $steps
-        </ol>
+        $ingredient_content
+        $step_content
       </div>
     </div>
   </div>

@@ -52,16 +52,25 @@
     <Folder Include="app\templates\app\" />
     <Folder Include="mydd\" />
     <Folder Include="tfl\" />
+    <Folder Include="tfl\output\" />
     <Folder Include="tfl\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="tfl\class_images.xml" />
+    <Content Include="tfl\output\steps.xml" />
     <Content Include="tfl\recipe-orchard.xml" />
-    <Content Include="tfl\recipe_steps.xml" />
+    <Content Include="tfl\recipe_ingredients_add.xml" />
+    <Content Include="tfl\recipe_ingredients_flat.xml" />
+    <Content Include="tfl\recipe_steps_flat.xml" />
+    <Content Include="tfl\recipe_steps_add.xml" />
+    <Content Include="tfl\recipe_ingredients_to_xml.xml" />
+    <Content Include="tfl\recipe_steps_to_xml.xml" />
     <Content Include="tfl\recipe_tags.xml" />
     <Content Include="tfl\recipe.xml" />
     <Content Include="tfl\class-orchard.xml" />
     <Content Include="tfl\templates\image-carousel-item.vtl" />
+    <Content Include="tfl\templates\ingredients.cshtml" />
+    <Content Include="tfl\templates\steps.cshtml" />
     <Content Include="tfl\templates\page.vtl" />
     <Content Include="tfl\templates\recipe.vtl" />
     <Content Include="tfl\templates\ingredient.vtl" />

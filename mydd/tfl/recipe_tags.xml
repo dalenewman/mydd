@@ -1,12 +1,18 @@
 <transformalize>
-  <processes>
-    <add name="RecipeTags" mode="@(Mode)">
+
+  <environments>
+    <add name="one">
       <parameters>
         <add name="Mode" value="default" />
       </parameters>
-      
+    </add>
+  </environments>
+
+  <processes>
+    <add name="RecipeTags" mode="@(Mode)">
+
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="*" password="*" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="*" />
         <add name="output" database="TflMyDD" />
       </connections>
       

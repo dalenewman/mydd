@@ -1,0 +1,29 @@
+@using System.Linq
+@using Transformalize.Libs.Rhino.Etl
+@{
+    Row[] results = Model.Process.Results;
+    int[] recipes = results.Select(r => (int) r["recipe_id"]).Distinct().ToArray();
+}<ingredients>
+    @for (var i = 0; i < recipes.Length; i++) {
+        var recipe = recipes[i];
+        var ingredients = results.Where(r => (int)r["recipe_id"] == recipe).OrderBy(r => (short)r["sequence"]).ToArray();
+        var sections = ingredients.Select(r => r["section"].ToString()).Distinct().ToArray();
+        <add>
+            <id>@(recipe)</id>
+            <content>
+                @for (var y = 0; y < sections.Length; y++) {
+                    var section = sections[y];
+                    <h4>Ingredients@(section == string.Empty ? string.Empty : " for " + section)</h4>
+                    <ul>
+                        @foreach (var ingredient in ingredients.Where(r => r["section"].ToString() == section)) {
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">@(ingredient["quantity"])<span class="uom"> @(ingredient["uom"])</span></span>
+                                <span itemprop="name"> @(ingredient["name"])</span>
+                            </li>
+                        }
+                    </ul>
+                }
+            </content>
+        </add>
+    }
+</ingredients>

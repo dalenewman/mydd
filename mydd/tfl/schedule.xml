@@ -1,13 +1,16 @@
 <transformalize>
-  <processes>
-    <add name="Schedule" mode="@(Mode)">
-
+  <environments>
+    <add name="default">
       <parameters>
         <add name="Mode" value="default" />
       </parameters>
+    </add>
+  </environments>
+  <processes>
+    <add name="Schedule" mode="@(Mode)">
       
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="*" password="*" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="*" />
         <add name="output" database="TflMyDD" />
       </connections>
       

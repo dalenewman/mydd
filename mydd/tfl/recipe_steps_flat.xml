@@ -1,0 +1,31 @@
+<transformalize>
+  <processes>
+    <add name="RecipeStepsFlat"
+         star-enabled="false"
+         parallel="false"
+         mode="@(Mode)">
+      
+      <connections>
+        <add name="input" server="localhost" database="TflMyDD" />
+        <add name="output" server="localhost" database="TflMyDD" />
+      </connections>
+      
+      <entities>
+        <add name="RecipeStepsAddElement">
+          <fields>
+            <add name="add" length="max" output="false" >
+              <transforms>
+                <add method="fromxml" root="add">
+                  <fields>
+                    <add name="id" type="int" />
+                    <add name="content" length="max" />
+                  </fields>
+                </add>
+              </transforms>
+            </add>
+          </fields>
+        </add>
+      </entities>
+    </add>
+  </processes>
+</transformalize>

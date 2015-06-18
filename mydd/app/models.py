@@ -175,9 +175,11 @@ class Schedule(models.Model):
 
 class Ingredient(models.Model):
     recipe = models.ForeignKey(Recipe, verbose_name=_("recipe"))
+    section = models.CharField(_("section"), max_length=128, blank=True, default="")
     quantity = models.CharField(_("quantity"), max_length=64, blank=True)
     uom = models.CharField(_("unit of measure"), max_length=128, blank=True)
     name = models.CharField(_("name"), max_length=255)
+    sequence = models.SmallIntegerField(_('sequence'), default=0) 
     images = models.ManyToManyField(Image, verbose_name=_("images"), blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
@@ -193,8 +195,9 @@ models.DateTimeField(auto_now=True).contribute_to_class(Ingredient.images.throug
 
 class Step(models.Model):
     recipe = models.ForeignKey(Recipe, verbose_name=_("recipe"))
+    section = models.CharField(_("section"), max_length=128, blank=True, default="")
     description = models.TextField(_("description"), max_length=1024 )
-    sequence = models.SmallIntegerField(_('sequence'))
+    sequence = models.SmallIntegerField(_('sequence'), default=0)
     images = models.ManyToManyField(Image, verbose_name=_("images"), blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
