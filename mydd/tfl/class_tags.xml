@@ -11,12 +11,17 @@
     <add name="ClassTags" mode="@(Mode)">
 
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="*" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="devdev1!" />
         <add name="output" database="TflMyDD" />
       </connections>
       
       <entities>
-        <add name="app_class_tags" alias="ClassTags" prefix="class_tags_" version="modified" delete="true" >
+        <add name="app_class_tags" 
+             alias="ClassTags" 
+             prefix="class_tags_" 
+             version="modified" 
+             delete="true"
+             query="SELECT id,class_id,tag_id,created,modified FROM app_class_tags">
           <fields>
             <add name="id" type="int32" primary-key="true" />
             <add name="class_id" type="int32" label="class id" />
@@ -25,7 +30,11 @@
             <add name="modified" type="datetime" />
           </fields>
         </add>
-        <add name="app_tag" alias="Tag" prefix="tag_" version="modified">
+        <add name="app_tag" 
+             alias="Tag" 
+             prefix="tag_" 
+             version="modified"
+             query="SELECT id,name,created,modified FROM app_tag">
           <fields>
             <add name="id" type="int32" primary-key="true" />
             <add name="name" length="128" />
@@ -34,6 +43,7 @@
           </fields>
         </add>
       </entities>
+      
       <relationships>
         <add left-entity="ClassTags" left-field="tag_id" right-entity="Tag" right-field="tag_id" />
       </relationships>

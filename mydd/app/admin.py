@@ -1,9 +1,9 @@
-from django.utils.translation import ugettext_lazy as _
+﻿from django.utils.translation import ugettext_lazy as _
 from django.contrib import admin
 from django.db import models
 from django.forms import Textarea
 from import_export import resources
-from import_export.admin import ImportExportModelAdmin
+#from import_export.admin import ImportExportModelAdmin
 from models import *
 
 class StepInline(admin.TabularInline):
@@ -27,7 +27,7 @@ class RecipeResource(resources.ModelResource):
     class Meta:
         model = Recipe
 
-class RecipeAdmin(ImportExportModelAdmin):
+class RecipeAdmin(admin.ModelAdmin):
     inlines = [StepInline, IngredientInline]
     list_display = ('name', 'description', 'servings')
     list_filter = ['difficulty', 'tags' ]
@@ -37,8 +37,8 @@ class RecipeAdmin(ImportExportModelAdmin):
     formfield_overrides = {
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols':120 })},
     }
-    resource_class = RecipeResource
-    pass
+    #resource_class = RecipeResource
+    #pass
 
 class ScheduleAdmin(admin.ModelAdmin):
     list_display = ( '_class','location','date','full')

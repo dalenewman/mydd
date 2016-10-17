@@ -218,4 +218,84 @@
                     </ul>
             </content>
         </add>
+        <add>
+            <id>12</id>
+            <content>
+                    <h4>Ingredients</h4>
+                    <ul>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1 1/2<span class="uom"> lb.</span></span>
+                                <span itemprop="name"> Ground Beef</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1 1/2<span class="uom"> cup</span></span>
+                                <span itemprop="name"> Fresh Parsley, minced, divided</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> tablespoons</span></span>
+                                <span itemprop="name"> Green Onion, minced</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> teaspoon</span></span>
+                                <span itemprop="name"> Kosher Salf</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/2<span class="uom"> teaspoon</span></span>
+                                <span itemprop="name"> Gound Pepper</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">3<span class="uom"> tablespoons</span></span>
+                                <span itemprop="name"> All Purpose Flour, divided</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> tablespoons</span></span>
+                                <span itemprop="name"> Canola Oil</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> cups</span></span>
+                                <span itemprop="name"> Onions, sliced</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">3-4<span class="uom"> Garlic Cloves</span></span>
+                                <span itemprop="name"> minced</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">3<span class="uom"> teaspoons</span></span>
+                                <span itemprop="name"> Tomato Paste</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> cups</span></span>
+                                <span itemprop="name"> Beef Broth</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/4<span class="uom"> cup</span></span>
+                                <span itemprop="name"> Red Wine</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> teaspoons</span></span>
+                                <span itemprop="name"> Dried Thyme</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> baguette</span></span>
+                                <span itemprop="name"> sliced 1/2 in. thick</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">3<span class="uom"> tablespoons</span></span>
+                                <span itemprop="name"> Butter, softened</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> tablespoon</span></span>
+                                <span itemprop="name"> Garlic Powder</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> tablespoon</span></span>
+                                <span itemprop="name"> Paprika</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">3/4<span class="uom"> cup</span></span>
+                                <span itemprop="name"> Parmesan Cheese, shredded or shaved</span>
+                            </li>
+                    </ul>
+            </content>
+        </add>
 </ingredients>

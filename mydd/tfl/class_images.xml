@@ -13,7 +13,7 @@
     <add name="ClassImages" mode="@(Mode)">
 
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="*" password="*" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="devdev1!" />
         <add name="output" database="TflMyDD" />
       </connections>
 
@@ -22,7 +22,12 @@
       </templates>
 
       <entities>
-        <add name="app_class_images" alias="ClassImages" prefix="class_images_" version="modified" delete="true" >
+        <add name="app_class_images" 
+             alias="ClassImages" 
+             prefix="class_images_" 
+             version="modified" 
+             delete="true"
+             query="SELECT id,class_id,image_id,created,modified FROM app_class_images">
           <fields>
             <add name="id" type="int32" primary-key="true" />
             <add name="class_id" type="int32" label="class id" />
@@ -31,7 +36,11 @@
             <add name="modified" type="datetime" />
           </fields>
         </add>
-        <add name="app_image" alias="Image" prefix="image_" version="modified">
+        <add name="app_image" 
+             alias="Image" 
+             prefix="image_" 
+             version="modified"
+             query="SELECT id,title,image,credits,caption,description,created,modified FROM app_image">
           <fields>
             <add name="id" type="int32" primary-key="true" />
             <add name="title" length="512" />
@@ -43,7 +52,7 @@
             <add name="modified" type="datetime" />
           </fields>
           <calculated-fields>
-            <add name="image_carousel_item" length="512" t="velocity(image_carousel_item,*)"></add>
+            <add name="image_carousel_item" length="512" t="copy(*).velocity(image_carousel_item)"></add>
           </calculated-fields>
         </add>
       </entities>

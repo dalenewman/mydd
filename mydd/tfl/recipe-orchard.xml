@@ -49,8 +49,8 @@
             <add name="ingredient_content" length="max" output="false"/>
           </fields>
           <calculated-fields>
-            <add name="content" length="max" t="velocity(recipe,*).htmlencode()" primary-key="true" output="false" />
-            <add name="page" length="max" t="velocity(page,*)" primary-key="true" />
+            <add name="content" length="max" t="copy(*).velocity(recipe).htmlencode()" primary-key="true" output="false" />
+            <add name="page" length="max" t="copy(*).velocity(page)" primary-key="true" />
           </calculated-fields>
         </add>
       </entities>

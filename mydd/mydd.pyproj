@@ -4,6 +4,8 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>mydd</Name>
     <RootNamespace>mydd</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -57,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="tfl\class_images.xml" />
+    <Content Include="tfl\output\ingredients.xml" />
     <Content Include="tfl\output\steps.xml" />
     <Content Include="tfl\recipe-orchard.xml" />
     <Content Include="tfl\recipe_ingredients_add.xml" />
@@ -114,6 +117,9 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

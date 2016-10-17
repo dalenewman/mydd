@@ -3,7 +3,7 @@
             <id>19</id>
             <content>
                     <h4>Directions</h4>
-                    <ol>
+                    <ol itemprop="instructions">
                             <li>In a medium bowl, combine peppers, panko, breadcrumbs, garlic and salmon.</li>
                             <li>In a small bowl, combine egg, soy sauce, lemon zest, parsley, salt &amp; pepper.</li>
                             <li>Add to pepper mixture tossing gently to combine.</li>
@@ -17,7 +17,7 @@
             <id>18</id>
             <content>
                     <h4>Directions</h4>
-                    <ol>
+                    <ol itemprop="instructions">
                             <li>Heat 2-tablespoon oil in large saucepan.</li>
                             <li>Saut&#233; the mushrooms, onions and garlic over low heat for 3 minutes, or until soft.</li>
                             <li>In large bowl, add mushroom mixture, oats, parmesan, breadcrumbs, egg, parsley, oregano, salt and pepper, mix well.</li>
@@ -31,7 +31,7 @@
             <id>36</id>
             <content>
                     <h4>Directions for Peppers and Sauce</h4>
-                    <ol>
+                    <ol itemprop="instructions">
                             <li>Pre-heat over to 350 degrees.</li>
                             <li>Using a small knife, cut a slit lengthwise down one side of each poblano pepper.</li>
                             <li>Make a small crosswise slit along the top to create a T-shape, try not to cut off the top.</li>
@@ -45,7 +45,7 @@
                             <li>Return skillet back over the heat and follow the directions for the filling below.</li>
                     </ol>
                     <h4>Directions for Filling</h4>
-                    <ol>
+                    <ol itemprop="instructions">
                             <li>Add another tablespoon of oil to the skillet; add the onion, garlic and cilantro, saut&#233; 1 minute.</li>
                             <li>Add the chicken, beans, broth, cumin, garlic powder, coriander, salt &amp; pepper.</li>
                             <li>Add the chicken, beans, broth, cumin, garlic powder, coriander, salt &amp; pepper.</li>
@@ -54,6 +54,26 @@
                             <li>Place each pepper in the casserole dish and top with the shredded cheese.</li>
                             <li>Cover with foil and bake for 20-30 minutes.</li>
                             <li>Garnish with cilantro.</li>
+                    </ol>
+            </content>
+        </add>
+        <add>
+            <id>12</id>
+            <content>
+                    <h4>Directions</h4>
+                    <ol itemprop="instructions">
+                            <li>Combine the ground beef, all but 3 tablespoons of the parsley, green onion, salt, and pepper. Shape mixture into 4 oval patties.</li>
+                            <li>Place 2 tablespoons of flour into a dish and dredge each patty through the flour.</li>
+                            <li>Heat the oil in a large skillet over medium heat.</li>
+                            <li>Add the patties and saut&#233; until browned on each side.</li>
+                            <li>Remove patties from the pan to a plate.</li>
+                            <li>Add onions to the pan and saut&#233; 5 minutes.</li>
+                            <li>Stir in the garlic and tomato paste, saut&#233; until paste begins to brown, about 1 min.</li>
+                            <li>Sprinkle the remaining flour over the paste. Cook 1 minute. Stir in broth, wine, and thyme.</li>
+                            <li>Return patties to the pan and bring sauce to a boil.</li>
+                            <li>Reduce heat to medium-low. Cover pan and simmer for 10 minutes.</li>
+                            <li>Meanwhile, add bread to a baking sheet. Butter each piece and lightly sprinkle with garlic powder, a pinch of paprika and half the parmesan cheese. Bake until bread is crisp.</li>
+                            <li>To serve, place the toast on a plate, the patty onto the toast, ladle the onion sauce over the top. Finish with the rest of the parmesan cheese and remaining parsley.</li>
                     </ol>
             </content>
         </add>

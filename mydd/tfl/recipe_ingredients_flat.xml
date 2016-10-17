@@ -17,7 +17,7 @@
               <transforms>
                 <add method="fromxml" root="add" xml-mode="First">
                   <fields>
-                    <add name="id" type="int" />
+                    <add name="id" type="int" primary-key="true" />
                     <add name="content" length="max" />
                   </fields>
                 </add>

@@ -52,8 +52,8 @@
             <add name="carousel_image_count" type="int" default="0" output="false" />
           </fields>
           <calculated-fields>
-            <add name="content" length="max" t="velocity(class,*).htmlencode()" primary-key="true" output="false" />
-            <add name="blog_post" length="max" t="velocity(blog_post,*)" primary-key="true" />
+            <add name="content" length="max" t="copy(*).velocity(class).htmlencode()" primary-key="true" output="false" />
+            <add name="blog_post" length="max" t="copy(*).velocity(blog_post)" primary-key="true" />
           </calculated-fields>
         </add>
       </entities>

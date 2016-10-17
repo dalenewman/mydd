@@ -10,7 +10,7 @@
     <add name="Schedule" mode="@(Mode)">
       
       <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="*" />
+        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="devdev1!" />
         <add name="output" database="TflMyDD" />
       </connections>
       
@@ -19,7 +19,11 @@
       </templates>
 
       <entities>
-        <add name="app_schedule" alias="Schedule" prefix="schedule_" version="modified">
+        <add name="app_schedule" 
+             alias="Schedule" 
+             prefix="schedule_" 
+             version="modified"
+             query="SELECT id,class_id,location_id,date,created,modified,full FROM app_schedule">
           <fields>
             <add name="id" type="int32" primary-key="true" ></add>
             <add name="class_id" alias="schedule_class_id" type="int32" label="class id" ></add>
@@ -30,10 +34,14 @@
             <add name="full" type="boolean" ></add>
           </fields>
           <calculated-fields>
-            <add name="schedule_past" type="boolean" t="js(var now = new Date(); schedule_date &lt; now;,schedule_date)" />
+            <add name="schedule_past" type="boolean" t="copy(schedule_date).js(var now = new Date(); schedule_date &lt; now;)" />
           </calculated-fields>
         </add>
-        <add name="app_location" alias="Location" prefix="location_" version="modified">
+        <add name="app_location" 
+             alias="Location" 
+             prefix="location_" 
+             version="modified"
+             query="SELECT id,name,description,website,street,city,state,zip,phone,created,modified FROM app_location">
           <fields>
             <add name="id" alias="schedule_location_id" type="int32" primary-key="true" ></add>
             <add name="name" length="255" ></add>
@@ -51,7 +59,7 @@
       </entities>
       
       <calculated-fields>
-        <add name="schedule_row" length="2048" t="velocity(schedule,*)" />
+        <add name="schedule_row" length="2048" t="copy(*).velocity(schedule)" />
       </calculated-fields>
       
       <relationships>

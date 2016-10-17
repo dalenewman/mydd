@@ -2,6 +2,7 @@
   <processes>
     <add name="RecipeStepsAdd"
          star-enabled="false"
+         view-enabled="false"
          parallel="false"
          mode="@(Mode)">
       
