@@ -1,0 +1,24 @@
+<add name="ClassMaster" mode="@(Mode)" pipeline="linq">
+
+  <environments>
+    <add name="one">
+      <parameters>
+        <add name="Mode" value="default" />
+        <add name="Folder" value="E:\Code\MyDD\mydd\tfl" />
+        <add name="Password" value="****" />
+      </parameters>
+    </add>
+  </environments>
+
+  <actions>
+    
+    <add type="tfl" url="@(Folder)\class_tags.xml?Mode=@(Mode)&amp;Password=@(Password)" />
+    <add type="tfl" url="@(Folder)\class_images.xml?Mode=@(Mode)&amp;Password=@(Password)" />
+    <add type="tfl" url="@(Folder)\class_recipes.xml?Mode=@(Mode)&amp;Password=@(Password)" />
+    <add type="tfl" url="@(Folder)\schedule.xml?Mode=@(Mode)&amp;Password=@(Password)" />
+    <add type="tfl" url="@(Folder)\class.xml?Mode=@(Mode)&amp;Password=@(Password)" />
+    <add type="tfl" url="@(Folder)\class-orchard.xml?Mode=@(Mode)&amp;Password=@(Password)" />
+    <add type="open" file="@(Folder)\output\class-output.xml" />
+  </actions>
+
+</add>

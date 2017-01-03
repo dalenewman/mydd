@@ -1,64 +1,60 @@
-<transformalize>
+<add name="ClassImages" mode="@(Mode)">
 
   <environments>
     <add name="one">
       <parameters>
         <add name="Mode" value="default" />
+        <add name="Password" value="****" />
+        <add name="Folder" value="E:\Code\MyDD" />
       </parameters>
     </add>
   </environments>
-  
-  <processes>
-    
-    <add name="ClassImages" mode="@(Mode)">
 
-      <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="devdev1!" />
-        <add name="output" database="TflMyDD" />
-      </connections>
+  <connections>
+    <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="@(Password)" />
+    <add name="output" provider="postgresql" port="5432" database="TflMyDD" user="postgres" password="@(Password)" />
+  </connections>
 
-      <templates>
-        <add name="image_carousel_item" file="c:\Code\MyDD\mydd\tfl\templates\image-carousel-item.vtl" />
-      </templates>
+  <templates>
+    <add name="image_carousel_item" file="@(Folder)\mydd\tfl\templates\image-carousel-item.vtl" />
+  </templates>
 
-      <entities>
-        <add name="app_class_images" 
-             alias="ClassImages" 
-             prefix="class_images_" 
-             version="modified" 
-             delete="true"
-             query="SELECT id,class_id,image_id,created,modified FROM app_class_images">
-          <fields>
-            <add name="id" type="int32" primary-key="true" />
-            <add name="class_id" type="int32" label="class id" />
-            <add name="image_id" type="int32" label="image id" />
-            <add name="created" type="datetime" />
-            <add name="modified" type="datetime" />
-          </fields>
-        </add>
-        <add name="app_image" 
-             alias="Image" 
-             prefix="image_" 
-             version="modified"
-             query="SELECT id,title,image,credits,caption,description,created,modified FROM app_image">
-          <fields>
-            <add name="id" type="int32" primary-key="true" />
-            <add name="title" length="512" />
-            <add name="image" alias="image_url" length="200" />
-            <add name="credits" length="512" />
-            <add name="caption" length="1024" />
-            <add name="description" length="4000" />
-            <add name="created" type="datetime" />
-            <add name="modified" type="datetime" />
-          </fields>
-          <calculated-fields>
-            <add name="image_carousel_item" length="512" t="copy(*).velocity(image_carousel_item)"></add>
-          </calculated-fields>
-        </add>
-      </entities>
-      <relationships>
-        <add left-entity="ClassImages" left-field="image_id" right-entity="Image" right-field="image_id" />
-      </relationships>
+  <entities>
+    <add name="app_class_images"
+         alias="ClassImages"
+         prefix="class_images_"
+         version="modified"
+         delete="true">
+      <fields>
+        <add name="id" type="int32" primary-key="true" />
+        <add name="class_id" type="int32" label="class id" />
+        <add name="image_id" type="int32" label="image id" />
+        <add name="created" type="datetime" />
+        <add name="modified" type="datetime" />
+      </fields>
     </add>
-  </processes>
-</transformalize>
+    <add name="app_image"
+         alias="Image"
+         prefix="image_"
+         version="modified">
+      <fields>
+        <add name="id" type="int32" primary-key="true" />
+        <add name="title" length="512" />
+        <add name="image" alias="image_url" length="200" />
+        <add name="credits" length="512" />
+        <add name="caption" length="1024" />
+        <add name="description" length="4000" />
+        <add name="created" type="datetime" />
+        <add name="modified" type="datetime" />
+      </fields>
+      <calculated-fields>
+        <add name="image_carousel_item" length="512" t="copy(*).velocity(image_carousel_item)"></add>
+      </calculated-fields>
+    </add>
+  </entities>
+  
+  <relationships>
+    <add left-entity="ClassImages" left-field="image_id" right-entity="Image" right-field="image_id" />
+  </relationships>
+  
+</add>

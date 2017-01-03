@@ -58,7 +58,10 @@
     <Folder Include="tfl\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="tfl\class-master.xml" />
+    <Content Include="tfl\class.bat" />
     <Content Include="tfl\class_images.xml" />
+    <Content Include="tfl\output\class-output.xml" />
     <Content Include="tfl\output\ingredients.xml" />
     <Content Include="tfl\output\steps.xml" />
     <Content Include="tfl\recipe-orchard.xml" />

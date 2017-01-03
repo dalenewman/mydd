@@ -1,158 +1,175 @@
-<transformalize>
-  
+<add name="Class" mode="@(Mode)" pipeline="linq">
+
   <environments>
     <add name="one">
       <parameters>
         <add name="Mode" value="default" />
-      </parameters>      
+        <add name="Folder" value="E:\Code\MyDD" />
+        <add name="Password" value="****" />
+      </parameters>
     </add>
   </environments>
-  
-  <processes>
-    <add name="Class" mode="@(Mode)" parallel="false">
-      
-      <connections>
-        <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="devdev1!" />
-        <add name="output" database="TflMyDD" />
-      </connections>
-      
-      <actions>
-        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\class_tags.xml?Mode=@(Mode)" before="true" after="false" />
-        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\class_images.xml?Mode=@(Mode)" before="true" after="false" />
-        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\class_recipes.xml?Mode=@(Mode)" before="true" after="false" />
-        <add action="tfl" mode="@(Mode)" url="c:\Code\MyDD\mydd\tfl\schedule.xml?Mode=@(Mode)" before="true" after="false" />
-      </actions>
-      
-      <entities>
-        
-        <add name="app_class" 
-             alias="Class" 
-             prefix="class_" 
-             version="modified" 
-             delete="true"
-             query="SELECT id,title,description,cost,instructor_id,created,modified FROM app_class">
-          <fields>
-            <add name="id" type="int32" primary-key="true" />
-            <add name="title" length="512" />
-            <add name="description" length="max" />
-            <add name="cost" type="decimal" precision="6" scale="2" />
-            <add name="instructor_id" type="int32" label="instructor id" />
-            <add name="created" type="datetime" />
-            <add name="modified" type="datetime" />
-          </fields>
-          <calculated-fields>
-            <add name="class_title_slug" length="512" t="copy(title).slugify()" />
-          </calculated-fields>
-        </add>
-        
-        <add name="app_person" 
-             alias="Instructor" 
-             prefix="instructor_" 
-             version="modified"
-             query="SELECT id,first,last,avatar,bio,created,modifed FROM app_person">
-          <fields>
-            <add name="id" type="int32" primary-key="true" />
-            <add name="first" length="128" />
-            <add name="last" length="128" />
-            <add name="avatar" length="200" />
-            <add name="bio" length="max" />
-            <add name="created" type="datetime" />
-            <add name="modified" type="datetime" />
-          </fields>
-          <calculated-fields>
-            <add name="instructor_full_name" length="128" t="copy(first,last).join( )" />
-          </calculated-fields>
-        </add>
-        
-        <add name="ClassTagsStar" connection="output" alias="ClassTags" version="class_tags_version" delete="true" group="true">
-          <fields>
-            <add name="TflUpdate" alias="class_tags_version" type="datetime" label="Tfl Update" aggregate="max" />
-            <add name="class_tags_class_id" type="int32" label="class tags class id" primary-key="true" aggregate="group" />
-            <add name="tag_name" alias="tags" length="255" label="tag name" aggregate="join"/>
-          </fields>
-        </add>
 
-        <add name="ClassImagesStar" connection="output" alias="ClassImages" version="class_images_version" delete="true" group="true">
-          <fields>
-            <add name="TflUpdate" alias="class_images_version" type="datetime" label="Tfl Update" aggregate="max" />
-            <add name="class_images_class_id" type="int32" label="class images class id" primary-key="true" aggregate="group" />
-            <add name="image_carousel_item" alias="carousel_images" length="4000" aggregate="join" delimiter=" "/>
-            <add name="carousel_image_count" input="false" type="int" default="0" aggregate="count" />
-          </fields>
-        </add>
+  <connections>
+    <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="@(Password)" />
+    <add name="output" provider="postgresql" port="5432" database="TflMyDD" user="postgres" password="@(Password)" />
+  </connections>
 
-        <add name="ClassRecipesStar" connection="output" alias="ClassRecipes" version="class_recipes_version" delete="true" group="true">
-          <fields>
-            <add name="TflUpdate" alias="class_recipes_version" type="datetime" label="Tfl Update" aggregate="max" />
-            <add name="class_recipes_class_id" type="int32" label="class recipes class id" primary-key="true" aggregate="group" />
-            <add name="recipe_list_item" alias="recipes" length="4000" label="recipe list item" aggregate="concat" />
-          </fields>
-        </add>
-        
-        <add name="ScheduleStar" connection="output" alias="ClassSchedule" version="schedule_version" delete="true" group="true">
-          <fields>
-            <add name="TflUpdate" alias="schedule_version" type="datetime" label="Tfl Update" aggregate="max" />
-            <add name="schedule_class_id" type="int32" primary-key="true" aggregate="group" />
-            <add name="schedule_row" alias="schedule" length="4000" aggregate="concat" />
-          </fields>
-        </add>
-        
-        <add name="NextScheduleDate" connection="output" query=" 
+  <entities>
+
+    <add name="app_class"
+         alias="Class"
+         prefix="class_"
+         version="modified">
+      <fields>
+        <add name="id" type="int32" primary-key="true" />
+        <add name="title" length="512" />
+        <add name="description" length="max" />
+        <add name="cost" type="decimal" precision="6" scale="2" />
+        <add name="instructor_id" type="int32" label="instructor id" />
+        <add name="created" type="datetime" />
+        <add name="modified" type="datetime" />
+      </fields>
+      <calculated-fields>
+        <add name="class_title_slug" length="512" t="copy(title).slugify()" />
+      </calculated-fields>
+    </add>
+
+    <add name="app_person"
+         alias="Instructor"
+         prefix="instructor_"
+         version="modified">
+      <fields>
+        <add name="id" type="int32" primary-key="true" />
+        <add name="first" length="128" />
+        <add name="last" length="128" />
+        <add name="avatar" length="200" />
+        <add name="bio" length="max" />
+        <add name="created" type="datetime" />
+        <add name="modified" type="datetime" />
+      </fields>
+      <calculated-fields>
+        <add name="instructor_full_name" length="128" t="copy(first,last).join( )" />
+      </calculated-fields>
+    </add>
+
+    <add name="ClassTagsStar" 
+         connection="output" 
+         alias="ClassTags"         
+         query="
+          SELECT 	class_tags_class_id,
+                  STRING_AGG(tag_name,' ') AS tags
+          FROM ClassTagsStar
+          GROUP BY class_tags_class_id
+         " >
+      <fields>
+        <add name="class_tags_class_id" type="int" primary-key="true"  />
+        <add name="tags" length="255" />
+      </fields>
+    </add>
+
+    <add name="ClassImagesStar"
+         connection="output"
+         alias="ClassImages"
+         query="
+          SELECT 
+            class_images_class_id,
+            COUNT(*) AS carousel_image_count,
+            STRING_AGG(image_carousel_item,' ') AS carousel_images
+          FROM ClassImagesStar
+            GROUP BY class_images_class_id
+         ">
+      <fields>
+        <add name="class_images_class_id" type="int" primary-key="true" />
+        <add name="carousel_image_count" type="long" default="0" />
+        <add name="carousel_images" length="4000"  />
+      </fields>
+    </add>
+
+    <add name="ClassRecipesStar" 
+         connection="output" 
+         alias="ClassRecipes"
+         query="
+          SELECT 	class_recipes_class_id,
+                  STRING_AGG(recipe_list_item,' ') AS recipes
+          FROM ClassRecipesStar
+          GROUP BY class_recipes_class_id        
+         ">
+      <fields>
+        <add name="class_recipes_class_id" type="int" primary-key="true" />
+        <add name="recipes" length="4000" />
+      </fields>
+    </add>
+
+    <add name="ScheduleStar" 
+         connection="output" 
+         alias="ClassSchedule"
+         query="
+          SELECT 	schedule_class_id,
+                  STRING_AGG(schedule_row,' ') AS schedule
+          FROM ScheduleStar
+          GROUP BY schedule_class_id">
+      <fields>
+        <add name="schedule_class_id" type="int" primary-key="true" />
+        <add name="schedule" length="4000" />
+      </fields>
+    </add>
+
+    <add name="NextScheduleDate" connection="output" query=" 
             SELECT
               s.schedule_class_id AS next_class_id,
               MIN(schedule_date) AS next_schedule_date
-            FROM dbo.ScheduleSchedule s
-            WHERE s.schedule_date &gt; GETDATE()
+            FROM ScheduleSchedule s
+            WHERE s.schedule_date &gt; current_date
             GROUP BY s.schedule_class_id;">
-          <fields>
-            <add name="next_class_id" type="int32" primary-key="true" />
-            <add name="next_schedule_date" type="datetime" />
-          </fields>
-          <calculated-fields>
-            <add name="next_is_daylight_savings" type="bool" t="copy(next_schedule_date).isdaylightsavings()" output="false" />
-            <add name="next_schedule_date_utc" >
-              <transforms>
-                <add method="timezone" run-field="next_is_daylight_savings" from-time-zone="Atlantic Standard Time" to-time-zone="UTC" parameter="next_schedule_date" />
-                <add method="timezone" run-field="next_is_daylight_savings" run-operator="NotEqual" from-time-zone="Eastern Standard Time" to-time-zone="UTC" parameter="next_schedule_date" />
-                <add method="format" format="{0:s}Z" />
-              </transforms>
-            </add>
-          </calculated-fields>
+      <fields>
+        <add name="next_class_id" type="int32" primary-key="true" />
+        <add name="next_schedule_date" type="datetime" />
+      </fields>
+      <calculated-fields>
+        <add name="next_is_daylight_savings" type="bool" t="copy(next_schedule_date).isdaylightsavings()" output="false" />
+        <add name="next_schedule_date_utc" >
+          <transforms>
+            <add method="timezone" run-field="next_is_daylight_savings" from-time-zone="Atlantic Standard Time" to-time-zone="UTC" parameter="next_schedule_date" />
+            <add method="timezone" run-field="next_is_daylight_savings" run-operator="NotEqual" from-time-zone="Eastern Standard Time" to-time-zone="UTC" parameter="next_schedule_date" />
+            <add method="format" format="{0:s}Z" />
+          </transforms>
         </add>
-        <add name="PrevScheduleDate" connection="output" query=" 
+      </calculated-fields>
+    </add>
+    
+    <add name="PrevScheduleDate" connection="output" query=" 
             SELECT
               s.schedule_class_id AS prev_class_id,
               MIN(schedule_date) AS prev_schedule_date
-            FROM dbo.ScheduleSchedule s
-            WHERE s.schedule_date &lt; GETDATE()
+            FROM ScheduleSchedule s
+            WHERE s.schedule_date &lt; current_date
             GROUP BY s.schedule_class_id;" >
-          <fields>
-            <add name="prev_class_id" type="int32" primary-key="true" />
-            <add name="prev_schedule_date" type="datetime" />
-          </fields>
-          <calculated-fields>
-            <add name="prev_is_daylight_savings" type="bool" t="copy(prev_schedule_date).isdaylightsavings()" output="false" />
-            <add name="prev_schedule_date_utc" >
-              <transforms>
-                <add method="timezone" run-field="prev_is_daylight_savings" from-time-zone="Atlantic Standard Time" to-time-zone="UTC" parameter="prev_schedule_date" />
-                <add method="timezone" run-field="prev_is_daylight_savings" run-operator="NotEqual" from-time-zone="Eastern Standard Time" to-time-zone="UTC" parameter="prev_schedule_date" />
-                <add method="format" format="{0:s}Z" />
-              </transforms>
-            </add>
-          </calculated-fields>
+      <fields>
+        <add name="prev_class_id" type="int32" primary-key="true" />
+        <add name="prev_schedule_date" type="datetime" />
+      </fields>
+      <calculated-fields>
+        <add name="prev_is_daylight_savings" type="bool" t="copy(prev_schedule_date).isdaylightsavings()" output="false" />
+        <add name="prev_schedule_date_utc" >
+          <transforms>
+            <add method="timezone" run-field="prev_is_daylight_savings" from-time-zone="Atlantic Standard Time" to-time-zone="UTC" parameter="prev_schedule_date" />
+            <add method="timezone" run-field="prev_is_daylight_savings" run-operator="NotEqual" from-time-zone="Eastern Standard Time" to-time-zone="UTC" parameter="prev_schedule_date" />
+            <add method="format" format="{0:s}Z" />
+          </transforms>
         </add>
-      </entities>
-      
-      <relationships>
-        <add left-entity="Class" left-field="instructor_id" right-entity="Instructor" right-field="instructor_id" />
-        <add left-entity="Class" left-field="id" right-entity="ClassTags" right-field="class_tags_class_id" />
-        <add left-entity="Class" left-field="id" right-entity="ClassImages" right-field="class_images_class_id" />
-        <add left-entity="Class" left-field="id" right-entity="ClassRecipes" right-field="class_recipes_class_id" />
-        <add left-entity="Class" left-field="id" right-entity="ClassSchedule" right-field="schedule_class_id" />
-        <add left-entity="Class" left-field="id" right-entity="NextScheduleDate" right-field="next_class_id" />
-        <add left-entity="Class" left-field="id" right-entity="PrevScheduleDate" right-field="prev_class_id" />
-      </relationships>
-      
+      </calculated-fields>
     </add>
-  </processes>
-</transformalize>
+  </entities>
+
+  <relationships>
+    <add left-entity="Class" left-field="instructor_id" right-entity="Instructor" right-field="instructor_id" />
+    <add left-entity="Class" left-field="id" right-entity="ClassTags" right-field="class_tags_class_id" />
+    <add left-entity="Class" left-field="id" right-entity="ClassImages" right-field="class_images_class_id" />
+    <add left-entity="Class" left-field="id" right-entity="ClassRecipes" right-field="class_recipes_class_id" />
+    <add left-entity="Class" left-field="id" right-entity="ClassSchedule" right-field="schedule_class_id" />
+    <add left-entity="Class" left-field="id" right-entity="NextScheduleDate" right-field="next_class_id" />
+    <add left-entity="Class" left-field="id" right-entity="PrevScheduleDate" right-field="prev_class_id" />
+  </relationships>
+
+</add>
