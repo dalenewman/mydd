@@ -4,7 +4,7 @@
     <add name="one">
       <parameters>
         <add name="Mode" value="default" />
-        <add name="Folder" value="E:\Code\MyDD\mydd\tfl" />
+        <add name="Folder" value="C:\Code\MyDD" />
         <add name="Password" value="****" />
       </parameters>
     </add>
@@ -12,13 +12,13 @@
 
   <actions>
     
-    <add type="tfl" url="@(Folder)\class_tags.xml?Mode=@(Mode)&amp;Password=@(Password)" />
-    <add type="tfl" url="@(Folder)\class_images.xml?Mode=@(Mode)&amp;Password=@(Password)" />
-    <add type="tfl" url="@(Folder)\class_recipes.xml?Mode=@(Mode)&amp;Password=@(Password)" />
-    <add type="tfl" url="@(Folder)\schedule.xml?Mode=@(Mode)&amp;Password=@(Password)" />
-    <add type="tfl" url="@(Folder)\class.xml?Mode=@(Mode)&amp;Password=@(Password)" />
-    <add type="tfl" url="@(Folder)\class-orchard.xml?Mode=@(Mode)&amp;Password=@(Password)" />
-    <add type="open" file="@(Folder)\output\class-output.xml" />
+    <add type="tfl" url="@(Folder)\mydd\tfl\class_tags.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" />
+    <add type="tfl" url="@(Folder)\mydd\tfl\class_images.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" />
+    <add type="tfl" url="@(Folder)\mydd\tfl\class_recipes.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" />
+    <add type="tfl" url="@(Folder)\mydd\tfl\schedule.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" />
+    <add type="tfl" url="@(Folder)\mydd\tfl\class.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" />
+    <add type="tfl" url="@(Folder)\mydd\tfl\class-orchard.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" />
+    <add type="open" file="@(Folder)\mydd\tfl\output\class-output.xml" />
   </actions>
 
 </add>
