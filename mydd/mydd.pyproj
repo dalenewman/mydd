@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="tfl\class-master.xml" />
-    <Content Include="tfl\class.bat" />
     <Content Include="tfl\class_images.xml" />
     <Content Include="tfl\output\class-output.xml" />
     <Content Include="tfl\output\ingredients.xml" />
@@ -120,6 +119,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="tfl\class.bat" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
