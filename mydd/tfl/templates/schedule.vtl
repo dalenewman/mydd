@@ -1,6 +1,10 @@
 <tr>
   <td>
-	<i class="fa fa-calendar" style="padding-right:4px;"> </i> $schedule_date.ToString("dddd, MMM d, yyyy  h tt")
+#if($schedule_past)
+    <i class="fa fa-calendar-times-o" style="padding-right:4px;"> </i> <del>$schedule_date.ToString("dddd, MMM d, yyyy  h tt")</del>
+#else
+    <i class="fa fa-calendar" style="padding-right:4px;"> </i> $schedule_date.ToString("dddd, MMM d, yyyy  h tt")
+#end
   </td>
   <td>
 #if($location_website)
@@ -16,7 +20,11 @@
 #if($schedule_full)
 <span class="label label-warning">full</span>
 #else
-<span class="label label-info">open</span>
+  #if($schedule_past)
+    <span class="label label-danger">closed</span>
+  #else
+    <span class="label label-info">open</span>
+  #end
 #end
   </td>
 </tr>

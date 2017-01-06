@@ -4,9 +4,9 @@
   <CommonPart Owner="/User.UserName=dalenewman"
               Container="/alias=culinary-classes"
 #if($next_schedule_date.Year() == 9999)
-              CreatedUtc="$prev_schedule_date_utc" />
+              CreatedUtc="$prev_schedule_date_utc_formatted" />
 #else
-              CreatedUtc="$next_schedule_date_utc" />
+              CreatedUtc="$next_schedule_date_utc_formatted" />
 #end
   <AutoroutePart Alias="culinary-classes/$class_title_slug"
                  UseCustomPattern="false" />

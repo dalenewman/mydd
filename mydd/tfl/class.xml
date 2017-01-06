@@ -127,14 +127,7 @@
         <add name="next_schedule_date" type="datetime" />
       </fields>
       <calculated-fields>
-        <add name="next_is_daylight_savings" type="bool" t="copy(next_schedule_date).isdaylightsavings()" output="false" />
-        <add name="next_schedule_date_utc" >
-          <transforms>
-            <add method="timezone" run-field="next_is_daylight_savings" from-time-zone="Atlantic Standard Time" to-time-zone="UTC" parameter="next_schedule_date" />
-            <add method="timezone" run-field="next_is_daylight_savings" run-operator="NotEqual" from-time-zone="Eastern Standard Time" to-time-zone="UTC" parameter="next_schedule_date" />
-            <add method="format" format="{0:s}Z" />
-          </transforms>
-        </add>
+        <add name="next_schedule_date_utc" type="datetime" t="copy(next_schedule_date).timezone(Eastern Standard Time,UTC)" />
       </calculated-fields>
     </add>
     
@@ -150,14 +143,7 @@
         <add name="prev_schedule_date" type="datetime" />
       </fields>
       <calculated-fields>
-        <add name="prev_is_daylight_savings" type="bool" t="copy(prev_schedule_date).isdaylightsavings()" output="false" />
-        <add name="prev_schedule_date_utc" >
-          <transforms>
-            <add method="timezone" run-field="prev_is_daylight_savings" from-time-zone="Atlantic Standard Time" to-time-zone="UTC" parameter="prev_schedule_date" />
-            <add method="timezone" run-field="prev_is_daylight_savings" run-operator="NotEqual" from-time-zone="Eastern Standard Time" to-time-zone="UTC" parameter="prev_schedule_date" />
-            <add method="format" format="{0:s}Z" />
-          </transforms>
-        </add>
+        <add name="prev_schedule_date_utc" type="datetime" t="copy(prev_schedule_date).timezone(Eastern Standard Time,UTC)" />
       </calculated-fields>
     </add>
   </entities>

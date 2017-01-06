@@ -12,7 +12,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Sunday,  Sep  21,  2014    1  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Sunday,  Sep  21,  2014    1  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -25,7 +25,7 @@
     &lt;/td&gt;
 &lt;/tr&gt;  &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Friday,  Sep  26,  2014    6  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Friday,  Sep  26,  2014    6  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -99,7 +99,7 @@
 &lt;/div&gt;"  />
     <CommonPart  Owner="/User.UserName=dalenewman"
                             Container="/alias=culinary-classes"
-                            CreatedUtc="2014-09-21T17:00:00Z"  />
+                            CreatedUtc="2014-09-21T18:00:00Z"  />
     <AutoroutePart  Alias="culinary-classes/french-bistro"
                                   UseCustomPattern="false"  />
     <TitlePart  Title="French  Bistro"  />
@@ -121,7 +121,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Sunday,  Feb  15,  2015    1  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Sunday,  Feb  15,  2015    1  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -130,8 +130,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-&lt;span  class=&quot;label  label-info&quot;&gt;open&lt;/span&gt;
-    &lt;/td&gt;
+            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
+        &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -163,7 +163,7 @@
             &lt;/div&gt;
             &lt;div  class=&quot;panel-body&quot;&gt;
                 &lt;ul&gt;
-                    &lt;li  class=&quot;bug&quot;&gt;&lt;a  href=&quot;../orange-chicken-and-broccoli-stir-fry&quot;  title=&quot;Orange  Chicken  and  Broccoli  Stir-Fry&quot;&gt;Orange  Chicken  and  Broccoli  Stir-Fry&lt;/a&gt;&lt;/li&gt;  &lt;li  class=&quot;bug&quot;&gt;&lt;a  href=&quot;../thai-fish-and-noodles&quot;  title=&quot;Thai  Fish  and  Noodles&quot;&gt;Thai  Fish  and  Noodles&lt;/a&gt;&lt;/li&gt;  &lt;li  class=&quot;bug&quot;&gt;&lt;a  href=&quot;../general-tso-s-chicken-and-scallion-brown-rice&quot;  title=&quot;General  Tso&amp;#39;s  Chicken  and  Scallion  Brown  Rice&quot;&gt;General  Tso&amp;#39;s  Chicken  and  Scallion  Brown  Rice&lt;/a&gt;&lt;/li&gt;  &lt;li  class=&quot;bug&quot;&gt;&lt;a  href=&quot;../mongolian-beef-with-thai-basil-fried-rice&quot;  title=&quot;Mongolian  Beef  with  Thai  Basil  Fried  Rice&quot;&gt;Mongolian  Beef  with  Thai  Basil  Fried  Rice&lt;/a&gt;&lt;/li&gt;
+                    &lt;li  class=&quot;bug&quot;&gt;&lt;a  href=&quot;../orange-chicken-and-broccoli-stir-fry&quot;  title=&quot;Orange  Chicken  and  Broccoli  Stir-Fry&quot;&gt;Orange  Chicken  and  Broccoli  Stir-Fry&lt;/a&gt;&lt;/li&gt;  &lt;li  class=&quot;bug&quot;&gt;&lt;a  href=&quot;../thai-fish-and-noodles&quot;  title=&quot;Thai  Fish  and  Noodles&quot;&gt;Thai  Fish  and  Noodles&lt;/a&gt;&lt;/li&gt;  &lt;li  class=&quot;bug&quot;&gt;&lt;a  href=&quot;../general-tsos-chicken-and-scallion-brown-rice&quot;  title=&quot;General  Tso&amp;#39;s  Chicken  and  Scallion  Brown  Rice&quot;&gt;General  Tso&amp;#39;s  Chicken  and  Scallion  Brown  Rice&lt;/a&gt;&lt;/li&gt;  &lt;li  class=&quot;bug&quot;&gt;&lt;a  href=&quot;../mongolian-beef-with-thai-basil-fried-rice&quot;  title=&quot;Mongolian  Beef  with  Thai  Basil  Fried  Rice&quot;&gt;Mongolian  Beef  with  Thai  Basil  Fried  Rice&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
             &lt;/div&gt;
         &lt;/div&gt;
@@ -194,7 +194,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Sunday,  Apr  12,  2015    11  AM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Sunday,  Apr  12,  2015    11  AM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -203,8 +203,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-&lt;span  class=&quot;label  label-info&quot;&gt;open&lt;/span&gt;
-    &lt;/td&gt;
+            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
+        &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -245,7 +245,7 @@
 &lt;/div&gt;"  />
     <CommonPart  Owner="/User.UserName=dalenewman"
                             Container="/alias=culinary-classes"
-                            CreatedUtc="2015-04-12T15:00:00Z"  />
+                            CreatedUtc="2015-04-12T16:00:00Z"  />
     <AutoroutePart  Alias="culinary-classes/the-perfect-gadget-for-ease-in-the-kitchen"
                                   UseCustomPattern="false"  />
     <TitlePart  Title="The  Perfect  Gadget  for  Ease  in  the  Kitchen"  />
@@ -254,7 +254,7 @@
                                 ThreadedComments="false"  />
     <TagsPart  Tags=""  />
 </BlogPost> 
- <BlogPost  Id="/alias=culinary-classes\/that-s-amore-for-an-italian-feast"
+ <BlogPost  Id="/alias=culinary-classes\/thats-amore-for-an-italian-feast"
                     Status="Published">
     <BodyPart  Text="&lt;div  class=&quot;row&quot;&gt;
     &lt;div  class=&quot;col-md-12  table-responsive&quot;&gt;
@@ -267,7 +267,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Friday,  Feb  13,  2015    6  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Friday,  Feb  13,  2015    6  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -319,7 +319,7 @@
     <CommonPart  Owner="/User.UserName=dalenewman"
                             Container="/alias=culinary-classes"
                             CreatedUtc="2015-02-13T23:00:00Z"  />
-    <AutoroutePart  Alias="culinary-classes/that-s-amore-for-an-italian-feast"
+    <AutoroutePart  Alias="culinary-classes/thats-amore-for-an-italian-feast"
                                   UseCustomPattern="false"  />
     <TitlePart  Title="That's  Amore  for  an  Italian  Feast"  />
     <CommentsPart  CommentsShown="false"
@@ -340,7 +340,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Thursday,  Oct  2,  2014    6  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Thursday,  Oct  2,  2014    6  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -353,7 +353,7 @@
     &lt;/td&gt;
 &lt;/tr&gt;  &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Saturday,  Oct  25,  2014    11  AM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Saturday,  Oct  25,  2014    11  AM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -362,8 +362,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-&lt;span  class=&quot;label  label-info&quot;&gt;open&lt;/span&gt;
-    &lt;/td&gt;
+            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
+        &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -404,7 +404,7 @@
 &lt;/div&gt;"  />
     <CommonPart  Owner="/User.UserName=dalenewman"
                             Container="/alias=culinary-classes"
-                            CreatedUtc="2014-10-02T22:00:00Z"  />
+                            CreatedUtc="2014-10-02T23:00:00Z"  />
     <AutoroutePart  Alias="culinary-classes/ten-new-sides"
                                   UseCustomPattern="false"  />
     <TitlePart  Title="Ten  New  Sides"  />
@@ -426,7 +426,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Sunday,  Nov  30,  2014    1  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Sunday,  Nov  30,  2014    1  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -499,7 +499,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Saturday,  Jan  31,  2015    11  AM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Saturday,  Jan  31,  2015    11  AM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -572,7 +572,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Friday,  Oct  24,  2014    6  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Friday,  Oct  24,  2014    6  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -585,7 +585,7 @@
     &lt;/td&gt;
 &lt;/tr&gt;  &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Sunday,  Oct  26,  2014    11  AM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Sunday,  Oct  26,  2014    11  AM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -594,8 +594,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-&lt;span  class=&quot;label  label-info&quot;&gt;open&lt;/span&gt;
-    &lt;/td&gt;
+            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
+        &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -636,7 +636,7 @@
 &lt;/div&gt;"  />
     <CommonPart  Owner="/User.UserName=dalenewman"
                             Container="/alias=culinary-classes"
-                            CreatedUtc="2014-10-24T22:00:00Z"  />
+                            CreatedUtc="2014-10-24T23:00:00Z"  />
     <AutoroutePart  Alias="culinary-classes/cozy-up-with-comfort-foods"
                                   UseCustomPattern="false"  />
     <TitlePart  Title="Cozy  up  with  Comfort  Foods"  />
@@ -658,7 +658,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Thursday,  Jul  17,  2014    6  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Thursday,  Jul  17,  2014    6  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -667,8 +667,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-&lt;span  class=&quot;label  label-info&quot;&gt;open&lt;/span&gt;
-    &lt;/td&gt;
+            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
+        &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -709,7 +709,7 @@
 &lt;/div&gt;"  />
     <CommonPart  Owner="/User.UserName=dalenewman"
                             Container="/alias=culinary-classes"
-                            CreatedUtc="2014-07-17T22:00:00Z"  />
+                            CreatedUtc="2014-07-17T23:00:00Z"  />
     <AutoroutePart  Alias="culinary-classes/burger-bonanza-anything-but-a-boring-burger"
                                   UseCustomPattern="false"  />
     <TitlePart  Title="Burger  Bonanza:  Anything  but  a  Boring  Burger!"  />
@@ -731,7 +731,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Thursday,  Nov  13,  2014    6  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Thursday,  Nov  13,  2014    6  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -744,7 +744,7 @@
     &lt;/td&gt;
 &lt;/tr&gt;  &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Saturday,  Nov  15,  2014    11  AM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Saturday,  Nov  15,  2014    11  AM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -757,7 +757,7 @@
     &lt;/td&gt;
 &lt;/tr&gt;  &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Thursday,  Dec  11,  2014    6  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Thursday,  Dec  11,  2014    6  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -766,8 +766,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-&lt;span  class=&quot;label  label-info&quot;&gt;open&lt;/span&gt;
-    &lt;/td&gt;
+            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
+        &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -830,7 +830,7 @@
             &lt;tbody&gt;
                 &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Saturday,  Sep  6,  2014    6  PM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Saturday,  Sep  6,  2014    6  PM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -843,7 +843,7 @@
     &lt;/td&gt;
 &lt;/tr&gt;  &lt;tr&gt;
     &lt;td&gt;
-	&lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Saturday,  Jan  10,  2015    11  AM
+        &lt;i  class=&quot;fa  fa-calendar-times-o&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  &lt;del&gt;Saturday,  Jan  10,  2015    11  AM&lt;/del&gt;
     &lt;/td&gt;
     &lt;td&gt;
     &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
@@ -852,8 +852,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-&lt;span  class=&quot;label  label-info&quot;&gt;open&lt;/span&gt;
-    &lt;/td&gt;
+            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
+        &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -894,7 +894,7 @@
 &lt;/div&gt;"  />
     <CommonPart  Owner="/User.UserName=dalenewman"
                             Container="/alias=culinary-classes"
-                            CreatedUtc="2014-09-06T22:00:00Z"  />
+                            CreatedUtc="2014-09-06T23:00:00Z"  />
     <AutoroutePart  Alias="culinary-classes/delicious-dishes-from-around-the-world"
                                   UseCustomPattern="false"  />
     <TitlePart  Title="Delicious  Dishes  from  Around  the  World"  />
