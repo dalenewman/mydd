@@ -43,17 +43,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -130,8 +130,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
-        &lt;/td&gt;
+&lt;span  class=&quot;label  label-warning&quot;&gt;full&lt;/span&gt;
+    &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -139,17 +139,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -188,6 +188,22 @@
         &lt;table  class=&quot;table&quot;&gt;
             &lt;thead&gt;
                 &lt;tr&gt;
+                    &lt;th  colspan=&quot;4&quot;&gt;Description&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td  colspan=&quot;4&quot;&gt;No  one  wants  to  clutter  the  kitchen  with  unnecessary  gadgets  but  SOME  are  worth  their  space  in  the  drawer  or  cabinet!!    We  will  show  you  what  is  worth  having  in  this  very  clever  cooking  class.&lt;/td&gt;
+		&lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div  class=&quot;row&quot;&gt;
+    &lt;div  class=&quot;col-md-12  table-responsive&quot;&gt;
+        &lt;table  class=&quot;table&quot;&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
                     &lt;th  colspan=&quot;4&quot;&gt;Schedule&lt;/th&gt;
                 &lt;/tr&gt;
             &lt;/thead&gt;
@@ -203,8 +219,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
-        &lt;/td&gt;
+&lt;span  class=&quot;label  label-warning&quot;&gt;full&lt;/span&gt;
+    &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -212,37 +228,20 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-1&quot;&gt;  &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;
-        &lt;div  class=&quot;panel  panel-default&quot;&gt;
-            &lt;div  class=&quot;panel-heading&quot;&gt;
-                &lt;h3  class=&quot;panel-title&quot;&gt;Menu&lt;/h3&gt;
-            &lt;/div&gt;
-            &lt;div  class=&quot;panel-body&quot;&gt;
-                &lt;ul&gt;
-                    
-                &lt;/ul&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div  class=&quot;col-md-1&quot;&gt;  &lt;/div&gt;
-&lt;/div&gt;"  />
+&lt;p&gt;&lt;/p&gt;"  />
     <CommonPart  Owner="/User.UserName=dalenewman"
                             Container="/alias=culinary-classes"
                             CreatedUtc="2015-04-12T16:00:00Z"  />
@@ -285,17 +284,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -321,7 +320,7 @@
                             CreatedUtc="2015-02-13T23:00:00Z"  />
     <AutoroutePart  Alias="culinary-classes/thats-amore-for-an-italian-feast"
                                   UseCustomPattern="false"  />
-    <TitlePart  Title="That's  Amore  for  an  Italian  Feast"  />
+    <TitlePart  Title="That&#39;s  Amore  for  an  Italian  Feast"  />
     <CommentsPart  CommentsShown="false"
                                 CommentsActive="false"
                                 ThreadedComments="false"  />
@@ -362,8 +361,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
-        &lt;/td&gt;
+&lt;span  class=&quot;label  label-warning&quot;&gt;full&lt;/span&gt;
+    &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -371,17 +370,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -444,17 +443,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -517,17 +516,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -594,8 +593,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
-        &lt;/td&gt;
+&lt;span  class=&quot;label  label-warning&quot;&gt;full&lt;/span&gt;
+    &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -603,17 +602,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -667,8 +666,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
-        &lt;/td&gt;
+&lt;span  class=&quot;label  label-warning&quot;&gt;full&lt;/span&gt;
+    &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -676,17 +675,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -766,8 +765,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
-        &lt;/td&gt;
+&lt;span  class=&quot;label  label-warning&quot;&gt;full&lt;/span&gt;
+    &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -775,17 +774,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -852,8 +851,8 @@
         &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
     &lt;/td&gt;
     &lt;td&gt;
-            &lt;span  class=&quot;label  label-danger&quot;&gt;closed&lt;/span&gt;
-        &lt;/td&gt;
+&lt;span  class=&quot;label  label-warning&quot;&gt;full&lt;/span&gt;
+    &lt;/td&gt;
 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
@@ -861,17 +860,17 @@
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;Tara  Newman&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div  class=&quot;row&quot;&gt;
-    &lt;div  class=&quot;col-md-2&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
         &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
     &lt;/div&gt;
-    &lt;div  class=&quot;col-md-10&quot;&gt;$30  (includes  generous  tastings  and  printed  recipes)&lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$30&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -898,6 +897,162 @@
     <AutoroutePart  Alias="culinary-classes/delicious-dishes-from-around-the-world"
                                   UseCustomPattern="false"  />
     <TitlePart  Title="Delicious  Dishes  from  Around  the  World"  />
+    <CommentsPart  CommentsShown="false"
+                                CommentsActive="false"
+                                ThreadedComments="false"  />
+    <TagsPart  Tags=""  />
+</BlogPost> 
+ <BlogPost  Id="/alias=culinary-classes\/pasta-101"
+                    Status="Published">
+    <BodyPart  Text="&lt;div  class=&quot;row&quot;&gt;
+    &lt;div  class=&quot;col-md-12  table-responsive&quot;&gt;
+        &lt;table  class=&quot;table&quot;&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th  colspan=&quot;4&quot;&gt;Description&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td  colspan=&quot;4&quot;&gt;Roll  up  your  sleeves  and  grab  an  apron  from  our  pantry  because  you  are  going  to  learn  how  to  make:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Homemade  Fettuccine&lt;/li&gt;
+    &lt;li&gt;Marinara  Sauce&lt;/li&gt;
+    &lt;li&gt;Alfredo  Sauce&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Class  includes  salad,  bread  and  sit-down  dinner  of  delicious  creations.&lt;/li&gt;
+    &lt;li&gt;This  is  a  repeat  class  from  last  year,  if  you  have  already  taken  this  one  you  may  be  interested  in  Pasta  102.&lt;/li&gt;
+    &lt;li&gt;Hands-on  classes  limited  to  8  students.&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div  class=&quot;row&quot;&gt;
+    &lt;div  class=&quot;col-md-12  table-responsive&quot;&gt;
+        &lt;table  class=&quot;table&quot;&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th  colspan=&quot;4&quot;&gt;Schedule&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+    &lt;td&gt;
+        &lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Thursday,  Feb  2,  2017    6  PM
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+        &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+            &lt;span  class=&quot;label  label-info&quot;&gt;open&lt;/span&gt;
+        &lt;/td&gt;
+&lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div  class=&quot;row&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
+        &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
+    &lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div  class=&quot;row&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
+        &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
+    &lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$40&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;"  />
+    <CommonPart  Owner="/User.UserName=dalenewman"
+                            Container="/alias=culinary-classes"
+                            CreatedUtc="2017-02-02T23:00:00Z"  />
+    <AutoroutePart  Alias="culinary-classes/pasta-101"
+                                  UseCustomPattern="false"  />
+    <TitlePart  Title="Pasta  101"  />
+    <CommentsPart  CommentsShown="false"
+                                CommentsActive="false"
+                                ThreadedComments="false"  />
+    <TagsPart  Tags=""  />
+</BlogPost> 
+ <BlogPost  Id="/alias=culinary-classes\/lunch-learn-asian-stir-fry"
+                    Status="Published">
+    <BodyPart  Text="&lt;div  class=&quot;row&quot;&gt;
+    &lt;div  class=&quot;col-md-12  table-responsive&quot;&gt;
+        &lt;table  class=&quot;table&quot;&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th  colspan=&quot;4&quot;&gt;Description&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td  colspan=&quot;4&quot;&gt;Arrive  to  an  already  prepared  lunch  for  you  to  eat  right  away.    As  you  enjoy  lunch,  the  chef  prepares  and  teaches  you  how  to  make  the  ASIAN  STIR  FRY  for  your  dinner.    At  the  end  of  class,  everyone  leaves  with  a  recipe  and  ALL  the  required  ingredients  to  prepare  this  dish  to  serve  dinner  for  four.    There&#39;s  your  dinner  for  that  night.  How  easy  is  that?&lt;/td&gt;
+		&lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div  class=&quot;row&quot;&gt;
+    &lt;div  class=&quot;col-md-12  table-responsive&quot;&gt;
+        &lt;table  class=&quot;table&quot;&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th  colspan=&quot;4&quot;&gt;Schedule&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+    &lt;td&gt;
+        &lt;i  class=&quot;fa  fa-calendar&quot;  style=&quot;padding-right:4px;&quot;&gt;  &lt;/i&gt;  Monday,  Jan  23,  2017    12  PM
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a  href=&quot;http://www.perennialaccents.com/&quot;  target=&quot;_blank&quot;&gt;Perennial  Accents&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+        &lt;a  href=&quot;http://maps.google.com/?q=220  State  St+St  Joseph+MI+49085&quot;  target=&quot;_blank&quot;&gt;&lt;i  class=&quot;fa  fa-map-marker&quot;&gt;&lt;/i&gt;  220  State  St  St  Joseph,  MI.  49085&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+&lt;span  class=&quot;label  label-warning&quot;&gt;full&lt;/span&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div  class=&quot;row&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
+        &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
+    &lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;Tara  Newman&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div  class=&quot;row&quot;&gt;
+    &lt;div  class=&quot;col-md-3&quot;&gt;
+        &lt;strong  style=&quot;padding-left:7px;&quot;&gt;Class  Fee&lt;/strong&gt;
+    &lt;/div&gt;
+    &lt;div  class=&quot;col-md-9&quot;&gt;$35&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;"  />
+    <CommonPart  Owner="/User.UserName=dalenewman"
+                            Container="/alias=culinary-classes"
+                            CreatedUtc="2017-01-23T17:00:00Z"  />
+    <AutoroutePart  Alias="culinary-classes/lunch-learn-asian-stir-fry"
+                                  UseCustomPattern="false"  />
+    <TitlePart  Title="Lunch  &amp;  Learn  Asian  Stir  Fry"  />
     <CommentsPart  CommentsShown="false"
                                 CommentsActive="false"
                                 ThreadedComments="false"  />

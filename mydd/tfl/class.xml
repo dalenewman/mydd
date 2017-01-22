@@ -91,13 +91,15 @@
          alias="ClassRecipes"
          query="
           SELECT 	class_recipes_class_id,
-                  STRING_AGG(recipe_list_item,' ') AS recipes
+                  STRING_AGG(recipe_list_item,' ') AS recipes,
+                  count(*) AS recipe_count
           FROM ClassRecipesStar
           GROUP BY class_recipes_class_id        
          ">
       <fields>
         <add name="class_recipes_class_id" type="int" primary-key="true" />
         <add name="recipes" length="4000" />
+        <add name="recipe_count" type="int" />
       </fields>
     </add>
 

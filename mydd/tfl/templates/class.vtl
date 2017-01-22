@@ -1,3 +1,21 @@
+#if($class_description != "")
+<div class="row">
+  <div class="col-md-12 table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th colspan="4">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+		<tr>
+			<td colspan="4">$class_description</td>
+		</tr>
+      </tbody>
+    </table>
+  </div>
+</div>#end
+
 #if($schedule != "")
 <div class="row">
   <div class="col-md-12 table-responsive">
@@ -16,21 +34,22 @@
 #end
 
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-3">
     <strong style="padding-left:7px;">Instructor</strong>
   </div>
-  <div class="col-md-10">$instructor_full_name</div>
+  <div class="col-md-9">$instructor_full_name</div>
 </div>
 
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-3">
     <strong style="padding-left:7px;">Class Fee</strong>
   </div>
-  <div class="col-md-10">$$class_cost (includes generous tastings and printed recipes)</div>
+  <div class="col-md-9">$$class_cost</div>
 </div>
 
 <p></p>
 
+#if($recipe_count > 0)
 <div class="row">
   <div class="col-md-1"> </div>
   <div class="col-md-10">
@@ -47,6 +66,7 @@
   </div>
   <div class="col-md-1"> </div>
 </div>
+#end
 
 #if($carousel_image_count > 0)
 <div id="myCarousel" class="carousel slide" data-ride="carousel">

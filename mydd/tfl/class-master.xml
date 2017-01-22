@@ -3,8 +3,8 @@
   <environments>
     <add name="one">
       <parameters>
-        <add name="Mode" value="default" />
-        <add name="Folder" value="C:\Code\MyDD" />
+        <add name="Mode" value="init" />
+        <add name="Folder" value="E:\Code\MyDD" />
         <add name="Password" value="****" />
       </parameters>
     </add>

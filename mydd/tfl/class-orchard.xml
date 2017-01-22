@@ -28,7 +28,7 @@
       <entities>
         <add name="ClassStar">
           <fields>
-            <add name="class_title" length="512" label="class title" output="false" />
+            <add name="class_title" length="512" label="class title" output="false" t="htmlencode()" />
             <add name="class_description" label="class description" output="false" />
             <add name="class_cost" type="decimal" precision="6" scale="2" label="class cost" output="false" />
             <add name="class_created" type="datetime" label="class created" output="false" />
@@ -43,6 +43,7 @@
             <add name="instructor_full_name" length="128" label="instructor full name" output="false" />
             <add name="tags" length="128" output="false" />
             <add name="recipes" length="4000" output="false" />
+            <add name="recipe_count" type="int" output="false" />
             <add name="schedule" length="4000" output="false"/>
             <add name="next_schedule_date" type="datetime" output="false" />
             <add name="next_schedule_date_utc" type="datetime" output="false" />
