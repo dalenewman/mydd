@@ -108,4 +108,4 @@ $RECYCLE.BIN/
 logs/
 
 # Visual Studio Build (Azure)
-[Bb]in/
+mydd/[Bb]in/
