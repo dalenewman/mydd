@@ -1,31 +1,30 @@
-<transformalize>
-  <processes>
-    <add name="RecipeIngredientsFlat"
-         star-enabled="false"
-         parallel="false"
-         mode="@(Mode)">
-      
-      <connections>
-        <add name="input" server="localhost" database="TflMyDD" />
-        <add name="output" server="localhost" database="TflMyDD" />
-      </connections>
-      
-      <entities>
-        <add name="RecipeIngredientsAddElement">
-          <fields>
-            <add name="add" length="max" output="false" >
-              <transforms>
-                <add method="fromxml" root="add" xml-mode="First">
-                  <fields>
-                    <add name="id" type="int" primary-key="true" />
-                    <add name="content" length="max" />
-                  </fields>
-                </add>
-              </transforms>
+<add name="RecipeIngredientsFlat" pipeline="linq" mode="@(Mode)">
+
+  <parameters>
+    <add name="Mode" value="init" />
+    <add name="Password" value="*" />
+  </parameters>
+
+  <connections>
+    <add name="input" provider="postgresql" port="5432" database="TflMyDD" user="postgres" password="@(Password)" />
+    <add name="output" provider="postgresql" port="5432" database="TflMyDD" user="postgres" password="@(Password)" />
+  </connections>
+
+  <entities>
+    <add name="RecipeIngredientsAddElement">
+      <fields>
+        <add name="add" length="max" output="false" engine="jint">
+          <transforms>
+            <add method="fromxml" root="add" xml-mode="First">
+              <fields>
+                <add name="id" type="int" primary-key="true" />
+                <add name="content" length="max" />
+              </fields>
             </add>
-          </fields>
+          </transforms>
         </add>
-      </entities>
+      </fields>
     </add>
-  </processes>
-</transformalize>
+  </entities>
+  
+</add>

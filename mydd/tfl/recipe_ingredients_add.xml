@@ -1,30 +1,29 @@
-<transformalize>
-  <processes>
-    <add name="RecipeIngredientsAdd"
-         star-enabled="false"
-         parallel="false"
-         mode="@(Mode)">
-      
-      <connections>
-        <add name="input" provider="file" direct="true" file="C:\Code\mydd\mydd\tfl\output\ingredients.xml" />
-        <add name="output" server="localhost" database="TflMyDD" />
-      </connections>
-      
-      <entities>
-        <add name="Element" connection="input">
-          <fields>
-            <add name="xml" length="max" output="false">
-              <transforms>
-                <add method="fromxml" xml-mode="All">
-                  <fields>
-                    <add name="add" length="max" read-inner-xml="false" />
-                  </fields>
-                </add>
-              </transforms>
+<add name="RecipeIngredientsAdd" pipeline="linq" mode="@(Mode)">
+
+  <parameters>
+    <add name="Mode" value="init" />
+    <add name="Password" value="*" />
+  </parameters>
+
+  <connections>
+    <add name="input" provider="file" file="e:\Code\mydd\mydd\tfl\output\ingredients.xml" />
+    <add name="output" provider="postgresql" port="5432" database="TflMyDD" user="postgres" password="@(Password)" />
+  </connections>
+
+  <entities>
+    <add name="Element" connection="input">
+      <fields>
+        <add name="xml" length="max" output="false">
+          <transforms>
+            <add method="fromxml" xml-mode="All">
+              <fields>
+                <add name="add" length="max" read-inner-xml="false" primary-key="true" />
+              </fields>
             </add>
-          </fields>
+          </transforms>
         </add>
-      </entities>
+      </fields>
     </add>
-  </processes>
-</transformalize>
+  </entities>
+  
+</add>

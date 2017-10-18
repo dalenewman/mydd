@@ -1,8 +1,9 @@
 @using System.Linq
-@using Transformalize.Libs.Rhino.Etl
+@using Transformalize
+@using Transformalize.Impl
 @{
-    Row[] results = Model.Process.Results;
-    int[] recipes = results.Select(r => (int) r["recipe_id"]).Distinct().ToArray();
+    List<CfgRow> results = Model.Process.Entities[0].Rows;
+    var recipes = results.Select(r => (int) r["recipe_id"]).Distinct().ToArray();
 }<ingredients>
     @for (var i = 0; i < recipes.Length; i++) {
         var recipe = recipes[i];

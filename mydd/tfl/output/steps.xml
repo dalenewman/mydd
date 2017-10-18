@@ -1,15 +1,20 @@
-<recipes>
-        <add>
-            <id>19</id>
+<recipes>        <add>
+            <id>12</id>
             <content>
                     <h4>Directions</h4>
                     <ol itemprop="instructions">
-                            <li>In a medium bowl, combine peppers, panko, breadcrumbs, garlic and salmon.</li>
-                            <li>In a small bowl, combine egg, soy sauce, lemon zest, parsley, salt &amp; pepper.</li>
-                            <li>Add to pepper mixture tossing gently to combine.</li>
-                            <li>Form mixture into 8 patties.</li>
-                            <li>Lightly coat a grill or skillet with cooking spray.</li>
-                            <li>Using medium-high heat, add the patties and cook approximately 5 minutes per side.</li>
+                            <li>Combine the ground beef, all but 3 tablespoons of the parsley, green onion, salt, and pepper. Shape mixture into 4 oval patties.</li>
+                            <li>Place 2 tablespoons of flour into a dish and dredge each patty through the flour.</li>
+                            <li>Heat the oil in a large skillet over medium heat.</li>
+                            <li>Add the patties and saut&#233; until browned on each side.</li>
+                            <li>Remove patties from the pan to a plate.</li>
+                            <li>Add onions to the pan and saut&#233; 5 minutes.</li>
+                            <li>Stir in the garlic and tomato paste, saut&#233; until paste begins to brown, about 1 min.</li>
+                            <li>Sprinkle the remaining flour over the paste. Cook 1 minute. Stir in broth, wine, and thyme.</li>
+                            <li>Return patties to the pan and bring sauce to a boil.</li>
+                            <li>Reduce heat to medium-low. Cover pan and simmer for 10 minutes.</li>
+                            <li>Meanwhile, add bread to a baking sheet. Butter each piece and lightly sprinkle with garlic powder, a pinch of paprika and half the parmesan cheese. Bake until bread is crisp.</li>
+                            <li>To serve, place the toast on a plate, the patty onto the toast, ladle the onion sauce over the top. Finish with the rest of the parmesan cheese and remaining parsley.</li>
                     </ol>
             </content>
         </add>
@@ -24,6 +29,20 @@
                             <li>Shape mixture into patties.</li>
                             <li>Heat 2 oil in large skillet over medium heat.</li>
                             <li>Saut&#233; patties, cooking about 4 minutes on each side – or until golden brown.</li>
+                    </ol>
+            </content>
+        </add>
+        <add>
+            <id>19</id>
+            <content>
+                    <h4>Directions</h4>
+                    <ol itemprop="instructions">
+                            <li>In a medium bowl, combine peppers, panko, breadcrumbs, garlic and salmon.</li>
+                            <li>In a small bowl, combine egg, soy sauce, lemon zest, parsley, salt &amp; pepper.</li>
+                            <li>Add to pepper mixture tossing gently to combine.</li>
+                            <li>Form mixture into 8 patties.</li>
+                            <li>Lightly coat a grill or skillet with cooking spray.</li>
+                            <li>Using medium-high heat, add the patties and cook approximately 5 minutes per side.</li>
                     </ol>
             </content>
         </add>
@@ -58,22 +77,68 @@
             </content>
         </add>
         <add>
-            <id>12</id>
+            <id>39</id>
             <content>
-                    <h4>Directions</h4>
+                    <h4>Directions for Squash</h4>
                     <ol itemprop="instructions">
-                            <li>Combine the ground beef, all but 3 tablespoons of the parsley, green onion, salt, and pepper. Shape mixture into 4 oval patties.</li>
-                            <li>Place 2 tablespoons of flour into a dish and dredge each patty through the flour.</li>
-                            <li>Heat the oil in a large skillet over medium heat.</li>
-                            <li>Add the patties and saut&#233; until browned on each side.</li>
-                            <li>Remove patties from the pan to a plate.</li>
-                            <li>Add onions to the pan and saut&#233; 5 minutes.</li>
-                            <li>Stir in the garlic and tomato paste, saut&#233; until paste begins to brown, about 1 min.</li>
-                            <li>Sprinkle the remaining flour over the paste. Cook 1 minute. Stir in broth, wine, and thyme.</li>
-                            <li>Return patties to the pan and bring sauce to a boil.</li>
-                            <li>Reduce heat to medium-low. Cover pan and simmer for 10 minutes.</li>
-                            <li>Meanwhile, add bread to a baking sheet. Butter each piece and lightly sprinkle with garlic powder, a pinch of paprika and half the parmesan cheese. Bake until bread is crisp.</li>
-                            <li>To serve, place the toast on a plate, the patty onto the toast, ladle the onion sauce over the top. Finish with the rest of the parmesan cheese and remaining parsley.</li>
+                            <li>To cook the squash, Pre-heat oven to 450 degrees.</li>
+                            <li>Using a vegetable peeler, peel the skin off the squash.</li>
+                            <li>Cut top and bottom off and discard.</li>
+                            <li>Cut squash in half and place face down on a baking sheet that has been sprayed with cooking spray or oil.</li>
+                            <li>Cover with foil and bake 35-45 min. or until squash is tender.</li>
+                            <li>Remove to cool.</li>
+                    </ol>
+                    <h4>Directions for Sauce</h4>
+                    <ol itemprop="instructions">
+                            <li>Leave oven pre-heated to 450 degrees.</li>
+                            <li>Heat a small saucepan over medium heat, add garlic and shallot, saut&#233; for 2 minutes.</li>
+                            <li>In a large bowl, combine squash, garlic and shallot mixture, nutmeg, sage and the egg white of one egg.</li>
+                            <li>Add a little salt and pepper, mix well and set aside.</li>
+                    </ol>
+                    <h4>Directions for Lasagna</h4>
+                    <ol itemprop="instructions">
+                            <li>In another medium bowl, combine 1-cup mozzarella, ricotta, milk and remaining egg.</li>
+                            <li>Spray a 9x13 baking dish with cooking spray.</li>
+                            <li>Spread a ⅓ cup of cheese mixture in the bottom of the dish.</li>
+                            <li>Arrange 3 noodles over cheese mixture.</li>
+                            <li>Top with half of squash mixture.</li>
+                            <li>Top with 1&#189; cups of spinach.</li>
+                            <li>Spread another ⅓ cup of cheese mixture over the spinach.</li>
+                            <li>Cover with 3 noodles again, then the remaining squash mixture.</li>
+                            <li>Spinach again, ending with the cheese mixture on top.</li>
+                            <li>Sprinkle remaining Mozzarella cheese on top.</li>
+                            <li>Cover with foil and bake for 20 minutes.</li>
+                            <li>Remove foil and bake another 10 minutes.</li>
+                            <li>Let stand for 5 minutes to cut perfect squares.</li>
+                    </ol>
+            </content>
+        </add>
+        <add>
+            <id>48</id>
+            <content>
+                    <h4>Directions for Pastry</h4>
+                    <ol itemprop="instructions">
+                            <li>Pre-heat oven to 450 degrees.</li>
+                            <li>Line a baking sheet with parchment paper.</li>
+                            <li>Place the flour, sugar, and salt into the bowl of a food processor, fitted with a steel blade.</li>
+                            <li>Pulse a few times to combine.</li>
+                            <li>Add the butter and pulse 12-15 times, or until the butter is the size of peas.</li>
+                            <li>Add the ice water all at once. Keep pulsing to combine, about another 12 times.</li>
+                            <li>Turn the dough out onto a well-floured board, roll it into a ball, and cut in half forming into 2 disks.</li>
+                            <li>Roll each pastry into an 11-inch circle on a lightly floured surface and transfer to the baking sheet.</li>
+                    </ol>
+                    <h4>Directions for Filling</h4>
+                    <ol itemprop="instructions">
+                            <li>In a large skillet, over medium heat, add the butter and apples.  Saut&#233; 5 minutes.</li>
+                            <li>Sprinkle the brown sugar, cinnamon, nutmeg and salt over the apples.  Stir in vanilla.</li>
+                            <li>Mix well and saut&#233; until the apples have cooked down (about 7 minutes).</li>
+                            <li>Pour mixture into the middle of the pastry crusts, dividing evenly.</li>
+                            <li>Gently fold a 2” border of the pastry, inward, over the fruit.</li>
+                            <li>Pleat the folds to make a seal.</li>
+                            <li>Bake for 20 minutes or until golden brown.  Let cool for 5 minutes.</li>
+                            <li>Using 2 large spatulas, transfer to a cutting board.</li>
+                            <li>Using a pizza roller, cut into triangles.</li>
+                            <li>Serve warm or at room temperature.</li>
                     </ol>
             </content>
         </add>

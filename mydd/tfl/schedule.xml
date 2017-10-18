@@ -1,14 +1,10 @@
 <add name="Schedule" mode="@(Mode)">
 
-  <environments>
-    <add name="default">
-      <parameters>
-        <add name="Mode" value="default" />
-        <add name="Password" value="****" />
-        <add name="Folder" value="E:\Code\MyDD" />
-      </parameters>
-    </add>
-  </environments>
+  <parameters>
+    <add name="Mode" value="default" />
+    <add name="Password" value="*" />
+    <add name="Folder" value="E:\Code\MyDD" />
+  </parameters>
 
   <connections>
     <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="@(Password)" />

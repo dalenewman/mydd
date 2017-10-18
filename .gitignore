@@ -106,6 +106,3 @@ $RECYCLE.BIN/
 
 # TFL
 logs/
-
-# Visual Studio Build (Azure)
-mydd/bin/

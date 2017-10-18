@@ -1,14 +1,10 @@
 <add name="Class" mode="@(Mode)" pipeline="linq">
 
-  <environments>
-    <add name="one">
-      <parameters>
-        <add name="Mode" value="default" />
-        <add name="Folder" value="E:\Code\MyDD" />
-        <add name="Password" value="****" />
-      </parameters>
-    </add>
-  </environments>
+  <parameters>
+    <add name="Mode" value="default" />
+    <add name="Folder" value="E:\Code\MyDD" />
+    <add name="Password" value="*" />
+  </parameters>
 
   <connections>
     <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="@(Password)" />
@@ -16,11 +12,7 @@
   </connections>
 
   <entities>
-
-    <add name="app_class"
-         alias="Class"
-         prefix="class_"
-         version="modified">
+    <add name="app_class" alias="Class" prefix="class_" version="modified">
       <fields>
         <add name="id" type="int32" primary-key="true" />
         <add name="title" length="512" />
@@ -34,11 +26,7 @@
         <add name="class_title_slug" length="512" t="copy(title).slugify()" />
       </calculated-fields>
     </add>
-
-    <add name="app_person"
-         alias="Instructor"
-         prefix="instructor_"
-         version="modified">
+    <add name="app_person" alias="Instructor" prefix="instructor_" version="modified">
       <fields>
         <add name="id" type="int32" primary-key="true" />
         <add name="first" length="128" />
@@ -52,28 +40,20 @@
         <add name="instructor_full_name" length="128" t="copy(first,last).join( )" />
       </calculated-fields>
     </add>
-
-    <add name="ClassTagsStar" 
-         connection="output" 
-         alias="ClassTags"         
-         query="
+    <add name="ClassTagsStar" connection="output" alias="ClassTags" query="
           SELECT 	class_tags_class_id,
                   STRING_AGG(tag_name,' ') AS tags
           FROM ClassTagsStar
           GROUP BY class_tags_class_id
-         " >
+         ">
       <fields>
-        <add name="class_tags_class_id" type="int" primary-key="true"  />
+        <add name="class_tags_class_id" type="int" primary-key="true" />
         <add name="tags" length="255" />
       </fields>
     </add>
-
-    <add name="ClassImagesStar"
-         connection="output"
-         alias="ClassImages"
-         query="
-          SELECT 
-            class_images_class_id,
+    
+    <add name="ClassImagesStar" connection="output" alias="ClassImages" query="
+          SELECT             class_images_class_id,
             COUNT(*) AS carousel_image_count,
             STRING_AGG(image_carousel_item,' ') AS carousel_images
           FROM ClassImagesStar
@@ -82,31 +62,22 @@
       <fields>
         <add name="class_images_class_id" type="int" primary-key="true" />
         <add name="carousel_image_count" type="long" default="0" />
-        <add name="carousel_images" length="4000"  />
+        <add name="carousel_images" length="4000" />
       </fields>
     </add>
-
-    <add name="ClassRecipesStar" 
-         connection="output" 
-         alias="ClassRecipes"
-         query="
+    <add name="ClassRecipesStar" connection="output" alias="ClassRecipes" query="
           SELECT 	class_recipes_class_id,
                   STRING_AGG(recipe_list_item,' ') AS recipes,
                   count(*) AS recipe_count
           FROM ClassRecipesStar
-          GROUP BY class_recipes_class_id        
-         ">
+          GROUP BY class_recipes_class_id                 ">
       <fields>
         <add name="class_recipes_class_id" type="int" primary-key="true" />
         <add name="recipes" length="4000" />
         <add name="recipe_count" type="int" />
       </fields>
     </add>
-
-    <add name="ScheduleStar" 
-         connection="output" 
-         alias="ClassSchedule"
-         query="
+    <add name="ScheduleStar" connection="output" alias="ClassSchedule" query="
           SELECT 	schedule_class_id,
                   STRING_AGG(schedule_row,' ') AS schedule
           FROM ScheduleStar
@@ -116,9 +87,7 @@
         <add name="schedule" length="4000" />
       </fields>
     </add>
-
-    <add name="NextScheduleDate" connection="output" query=" 
-            SELECT
+    <add name="NextScheduleDate" connection="output" query="             SELECT
               s.schedule_class_id AS next_class_id,
               MIN(schedule_date) AS next_schedule_date
             FROM ScheduleSchedule s
@@ -132,14 +101,12 @@
         <add name="next_schedule_date_utc" type="datetime" t="copy(next_schedule_date).timezone(Eastern Standard Time,UTC)" />
       </calculated-fields>
     </add>
-    
-    <add name="PrevScheduleDate" connection="output" query=" 
-            SELECT
+    <add name="PrevScheduleDate" connection="output" query="             SELECT
               s.schedule_class_id AS prev_class_id,
               MIN(schedule_date) AS prev_schedule_date
             FROM ScheduleSchedule s
             WHERE s.schedule_date &lt; current_date
-            GROUP BY s.schedule_class_id;" >
+            GROUP BY s.schedule_class_id;">
       <fields>
         <add name="prev_class_id" type="int32" primary-key="true" />
         <add name="prev_schedule_date" type="datetime" />
@@ -149,7 +116,6 @@
       </calculated-fields>
     </add>
   </entities>
-
   <relationships>
     <add left-entity="Class" left-field="instructor_id" right-entity="Instructor" right-field="instructor_id" />
     <add left-entity="Class" left-field="id" right-entity="ClassTags" right-field="class_tags_class_id" />
@@ -159,5 +125,4 @@
     <add left-entity="Class" left-field="id" right-entity="NextScheduleDate" right-field="next_class_id" />
     <add left-entity="Class" left-field="id" right-entity="PrevScheduleDate" right-field="prev_class_id" />
   </relationships>
-
 </add>

@@ -1,10 +1,11 @@
+@using System.Collections.Generic
 @using System.Linq
-@using Transformalize.Libs.Rhino.Etl
+@using Transformalize
+@using Transformalize.Impl
 @{
-    Row[] results = Model.Process.Results;
-    int[] recipes = results.Select(r => (int) r["step_recipe_id"]).Distinct().ToArray();
-}<recipes>
-    @for (var i = 0; i < recipes.Length; i++) {
+    List<CfgRow> results = Model.Process.Entities[0].Rows;
+    var recipes = results.Select(r => (int) r["step_recipe_id"]).Distinct().ToArray();
+}<recipes>@for (var i = 0; i < recipes.Length; i++) {
         var recipe = recipes[i];
         var steps = results.Where(r => (int)r["step_recipe_id"] == recipe).OrderBy(r => (short)r["step_sequence"]).ToArray();
         var sections = steps.Select(r => r["step_section"].ToString()).Distinct().ToArray();
