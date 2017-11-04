@@ -1,14 +1,14 @@
 <div itemscope="" itemtype="http://data-vocabulary.org/Recipe">
-  
+
 <div class="pull-left">
-  <span itemprop="name">$recipe_name</span> by <span itemprop="author">$author_full_name</span>
+<!--<span itemprop="name">$recipe_name</span>-->by <span itemprop="author">$author_full_name</span>
 </div>
 
 #if($recipe_inspiration)
 <p>$recipe_inspiration</p>
 #end
 
-#if($recipe_description != "")
+#if($recipe_description != "")<br/>
 <h3>Description</h3>
 <p itemprop="summary">$recipe_description</p>
 #end
@@ -50,6 +50,19 @@
       </div>
     </div>
   </div>
+</div>
+#end
+
+#if($carousel_image_count > 0)
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Carousel items -->
+	<div class="carousel-inner">
+		<div class="active item">
+			<div class="row">
+				$carousel_images
+			</div>
+		</div>
+	</div>
 </div>
 #end
 

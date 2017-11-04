@@ -680,8 +680,8 @@
     &lt;a href=&quot;http://maps.google.com/?q=220 State St+St Joseph+MI+49085&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-map-marker&quot;&gt;&lt;/i&gt; 220 State St St Joseph, MI. 49085&lt;/a&gt;
   &lt;/td&gt;
   &lt;td&gt;
-      &lt;span class=&quot;label label-danger&quot;&gt;closed&lt;/span&gt;
-    &lt;/td&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;full&lt;/span&gt;
+  &lt;/td&gt;
 &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
@@ -1053,6 +1053,95 @@
   <AutoroutePart Alias="culinary-classes/delicious-dishes-from-around-the-world"
                  UseCustomPattern="false" />
   <TitlePart Title="Delicious Dishes from Around the World" />
+  <CommentsPart CommentsShown="false"
+                CommentsActive="false"
+                ThreadedComments="false" />
+  <TagsPart Tags="" />
+</BlogPost>
+<BlogPost Id="/alias=culinary-classes\/favorite-fall-dishes"
+          Status="Published">
+  <BodyPart Text="&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-12 table-responsive&quot;&gt;
+    &lt;table class=&quot;table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th colspan=&quot;4&quot;&gt;Description&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;4&quot;&gt;Delight in the beautiful harvest of fall food! This demonstration style culinary class will show how to make fresh and healthy recipes, using favorite fall ingredients. Chef Tara Newman includes generous tastings and recipes to go home. These recipes will impress your family and friends, during the holiday season and in everyday cooking.&lt;/td&gt;
+		&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-12 table-responsive&quot;&gt;
+    &lt;table class=&quot;table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th colspan=&quot;4&quot;&gt;Schedule&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+  &lt;td&gt;
+    &lt;i class=&quot;fa fa-calendar&quot; style=&quot;padding-right:4px;&quot;&gt; &lt;/i&gt; Thursday, Nov 16, 2017  6 PM
+  &lt;/td&gt;
+  &lt;td&gt;
+  &lt;a href=&quot;https://www.facebook.com/The-Collective-485655654959286&quot; target=&quot;_blank&quot;&gt;The Loft Kitchen @ The Collective&lt;/a&gt;
+  &lt;/td&gt;
+  &lt;td&gt;
+    &lt;a href=&quot;http://maps.google.com/?q=234 Territorial Road+Benton Harbor+MI+49022&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-map-marker&quot;&gt;&lt;/i&gt; 234 Territorial Road Benton Harbor, MI. 49022&lt;/a&gt;
+  &lt;/td&gt;
+  &lt;td&gt;
+      &lt;span class=&quot;label label-info&quot;&gt;open&lt;/span&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-3&quot;&gt;
+    &lt;strong style=&quot;padding-left:7px;&quot;&gt;Instructor&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-9&quot;&gt;Tara Newman&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-3&quot;&gt;
+    &lt;strong style=&quot;padding-left:7px;&quot;&gt;Class Fee&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-9&quot;&gt;$40&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt; &lt;/div&gt;
+  &lt;div class=&quot;col-md-10&quot;&gt;
+    &lt;div class=&quot;panel panel-default&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h3 class=&quot;panel-title&quot;&gt;Menu&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        &lt;ul&gt;
+          &lt;li class=&quot;bug&quot;&gt;&lt;a href=&quot;../roasted-beet-and-pear-salad&quot; title=&quot;Roasted Beet and Pear Salad&quot;&gt;Roasted Beet and Pear Salad&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;bug&quot;&gt;&lt;a href=&quot;../herbed-sausage-and-cranberry-stuffed-acorn-squash&quot; title=&quot;Herbed Sausage and Cranberry Stuffed Acorn Squash&quot;&gt;Herbed Sausage and Cranberry Stuffed Acorn Squash&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;bug&quot;&gt;&lt;a href=&quot;../whole-roasted-spatchcock-chicken-with-root-vegetables&quot; title=&quot;Whole Roasted Spatchcock Chicken with Root Vegetables&quot;&gt;Whole Roasted Spatchcock Chicken with Root Vegetables&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;bug&quot;&gt;&lt;a href=&quot;../cracked-skillet-potatoes-with-fennel-and-coriander&quot; title=&quot;Cracked Skillet Potatoes with Fennel and Coriander&quot;&gt;Cracked Skillet Potatoes with Fennel and Coriander&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;bug&quot;&gt;&lt;a href=&quot;../sweet-potato-bread&quot; title=&quot;Sweet Potato Bread&quot;&gt;Sweet Potato Bread&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt; &lt;/div&gt;
+&lt;/div&gt;" />
+  <CommonPart Owner="/User.UserName=dalenewman"
+              Container="/alias=culinary-classes"
+              CreatedUtc="2017-11-16T23:00:00Z" />
+  <AutoroutePart Alias="culinary-classes/favorite-fall-dishes"
+                 UseCustomPattern="false" />
+  <TitlePart Title="Favorite Fall Dishes" />
   <CommentsPart CommentsShown="false"
                 CommentsActive="false"
                 ThreadedComments="false" />
