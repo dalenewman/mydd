@@ -7,17 +7,12 @@
 
   <connections>
     <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="@(Password)" />
-    <add name="output" provider="internal" />
+    <add name="output" provider="razor" template="e:\Code\mydd\mydd\tfl\templates\ingredients.cshtml" file="e:\Code\mydd\mydd\tfl\output\ingredients.xml" />
   </connections>
 
-  <templates>
-    <add name="ingredients" file="e:\Code\mydd\mydd\tfl\templates\ingredients.cshtml" engine="razor" content-type="html">
-      <actions>
-        <add type="copy" mode="init" to="e:\Code\mydd\mydd\tfl\output\ingredients.xml" />
-        <add type="open" mode="init" file="e:\Code\mydd\mydd\tfl\output\ingredients.xml" />
-      </actions>
-    </add>
-  </templates>
+  <actions>
+    <add type="open" mode="init" file="e:\Code\mydd\mydd\tfl\output\ingredients.xml" />
+  </actions>
 
   <entities>
     <add name="app_ingredient" version="modified" query="SELECT id,recipe_id,section,sequence,name,quantity,uom,created,modified FROM app_ingredient ORDER BY recipe_id, sequence ASC">
@@ -26,9 +21,9 @@
         <add name="recipe_id" type="int" label="recipe id" />
         <add name="section" length="128" />
         <add name="sequence" type="short" />
-        <add name="name" length="255" />
+        <add name="name" length="255" t="xmlencode()" />
         <add name="quantity" length="64" />
-        <add name="uom" length="128" />
+        <add name="uom" length="128" t="xmlencode()" />
         <add name="created" type="datetime" />
         <add name="modified" type="datetime" />
       </fields>

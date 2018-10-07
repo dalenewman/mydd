@@ -17,8 +17,8 @@
   </connections>
 
   <templates>
-    <add name="recipe" file="@(Folder)\mydd\tfl\templates\recipe.vtl" />
-    <add name="page" file="@(Folder)\mydd\tfl\templates\page.vtl" />
+    <add name="recipe" engine="velocity" file="@(Folder)\mydd\tfl\templates\recipe.vtl" />
+    <add name="page" engine="velocity" file="@(Folder)\mydd\tfl\templates\page.vtl" />
   </templates>
 
   <actions>

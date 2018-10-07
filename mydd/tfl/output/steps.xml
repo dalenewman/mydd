@@ -1,4 +1,5 @@
-<recipes>        <add>
+<recipes>
+       <add>
             <id>12</id>
             <content>
                     <h4>Directions</h4>
@@ -18,7 +19,7 @@
                     </ol>
             </content>
         </add>
-        <add>
+       <add>
             <id>18</id>
             <content>
                     <h4>Directions</h4>
@@ -32,7 +33,7 @@
                     </ol>
             </content>
         </add>
-        <add>
+       <add>
             <id>19</id>
             <content>
                     <h4>Directions</h4>
@@ -46,7 +47,7 @@
                     </ol>
             </content>
         </add>
-        <add>
+       <add>
             <id>36</id>
             <content>
                     <h4>Directions for Peppers and Sauce</h4>
@@ -67,8 +68,7 @@
                     <ol itemprop="instructions">
                             <li>Add another tablespoon of oil to the skillet; add the onion, garlic and cilantro, saut&#233; 1 minute.</li>
                             <li>Add the chicken, beans, broth, cumin, garlic powder, coriander, salt &amp; pepper.</li>
-                            <li>Add the chicken, beans, broth, cumin, garlic powder, coriander, salt &amp; pepper.</li>
-                            <li>Use a table knife, scrape off the charred skins of the poblano peppers. </li>
+                            <li>Use a table knife, scrape off the charred skins of the poblano peppers.</li>
                             <li>Carefully stuff each pepper with the filling.</li>
                             <li>Place each pepper in the casserole dish and top with the shredded cheese.</li>
                             <li>Cover with foil and bake for 20-30 minutes.</li>
@@ -76,7 +76,7 @@
                     </ol>
             </content>
         </add>
-        <add>
+       <add>
             <id>39</id>
             <content>
                     <h4>Directions for Squash</h4>
@@ -113,7 +113,7 @@
                     </ol>
             </content>
         </add>
-        <add>
+       <add>
             <id>48</id>
             <content>
                     <h4>Directions for Pastry</h4>
@@ -139,6 +139,37 @@
                             <li>Using 2 large spatulas, transfer to a cutting board.</li>
                             <li>Using a pizza roller, cut into triangles.</li>
                             <li>Serve warm or at room temperature.</li>
+                    </ol>
+            </content>
+        </add>
+       <add>
+            <id>54</id>
+            <content>
+                    <h4>Directions</h4>
+                    <ol itemprop="instructions">
+                            <li>In a large stock pot, over medium heat, add the canola oil, carrots, and onion.</li>
+                            <li>Saut&#233; 3 minutes, add the leek, thyme, fennel, salt, &amp; pepper, saut&#233; another 5 minutes to bring out the sweetness in the vegetables.</li>
+                            <li>Add asparagus to cook 2 minutes.</li>
+                            <li>Add the garlic, cook 1 min.</li>
+                            <li>Add broth and bring to a boil.</li>
+                            <li>Stir in spinach, reduce heat and simmer for 10 minutes.</li>
+                            <li>Garnish with fresh chives or parsley before serving.</li>
+                    </ol>
+            </content>
+        </add>
+       <add>
+            <id>55</id>
+            <content>
+                    <h4>Directions</h4>
+                    <ol itemprop="instructions">
+                            <li>In a large pot, over medium heat, add the canola oil and bacon, cook until crisp.</li>
+                            <li>Using a slotted spoon, transfer bacon to paper towel and set aside. Leave bacon drippings.</li>
+                            <li>Add corn kernels, red pepper, onion, jalape&#241;o, red pepper flakes, thyme, thyme, cumin, salt, and pepper.</li>
+                            <li>Saut&#233; vegetables together until soft and golden brown.</li>
+                            <li>Add creamed corn and broth, bring to a boil.</li>
+                            <li>Stir in half and half, the shredded chicken and bacon.</li>
+                            <li>Cook another 10 minutes.</li>
+                            <li>Season with salt and pepper; add the copped chives and serve!</li>
                     </ol>
             </content>
         </add>

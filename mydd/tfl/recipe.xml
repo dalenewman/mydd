@@ -12,14 +12,14 @@
   </connections>
 
   <actions>
-    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_tags.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" before="true" after="false" />
-    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_images.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" />    
-    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_steps_to_xml.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" before="true" after="false" />
-    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_steps_add.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" before="true" after="false" />
-    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_steps_flat.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" before="true" after="false" />
-    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_ingredients_to_xml.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" before="true" after="false" />
-    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_ingredients_add.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" before="true" after="false" />
-    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_ingredients_flat.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" before="true" after="false" />
+    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_tags.xml?Mode=@(Mode)&Password=@(Password)&Folder=@(Folder)" before="true" after="false" />
+    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_images.xml?Mode=@(Mode)&Password=@(Password)&Folder=@(Folder)" />    
+    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_steps_to_xml.xml?Mode=@(Mode)&Password=@(Password)&Folder=@(Folder)" before="true" after="false" />
+    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_steps_add.xml?Mode=@(Mode)&Password=@(Password)&Folder=@(Folder)" before="true" after="false" />
+    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_steps_flat.xml?Mode=@(Mode)&Password=@(Password)&Folder=@(Folder)" before="true" after="false" />
+    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_ingredients_to_xml.xml?Mode=@(Mode)&Password=@(Password)&Folder=@(Folder)" before="true" after="false" />
+    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_ingredients_add.xml?Mode=@(Mode)&Password=@(Password)&Folder=@(Folder)" before="true" after="false" />
+    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe_ingredients_flat.xml?Mode=@(Mode)&Password=@(Password)&Folder=@(Folder)" before="true" after="false" />
   </actions>
 
   <entities>

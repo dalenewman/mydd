@@ -3,21 +3,25 @@
 @using Transformalize
 @using Transformalize.Impl
 @{
-    List<CfgRow> results = Model.Process.Entities[0].Rows;
-    var recipes = results.Select(r => (int) r["step_recipe_id"]).Distinct().ToArray();
-}<recipes>@for (var i = 0; i < recipes.Length; i++) {
+    var id_field = Model.Process.Entities.First().Fields.First(f=>f.Alias == "step_recipe_id");
+    var sequence_field = Model.Process.Entities.First().Fields.First(f=>f.Alias == "step_sequence");
+    var step_section_field = Model.Process.Entities.First().Fields.First(f=>f.Alias == "step_section");
+    var step_desction_field = Model.Process.Entities.First().Fields.First(f=>f.Alias == "step_description");
+    var recipes = Model.Rows.Select(r => (int) r[id_field]).Distinct().ToArray();
+}<recipes>
+    @for (var i = 0; i < recipes.Length; i++) {
         var recipe = recipes[i];
-        var steps = results.Where(r => (int)r["step_recipe_id"] == recipe).OrderBy(r => (short)r["step_sequence"]).ToArray();
-        var sections = steps.Select(r => r["step_section"].ToString()).Distinct().ToArray();
-        <add>
+        var steps = Model.Rows.Where(r => (int)r[id_field] == recipe).OrderBy(r => (short)r[sequence_field]).ToArray();
+        var sections = steps.Select(r => r[step_section_field].ToString()).Distinct().ToArray();
+       <add>
             <id>@(recipe)</id>
             <content>
                 @for (var y = 0; y < sections.Length; y++) {
                     var section = sections[y];
                     <h4>Directions@(section == string.Empty ? string.Empty : " for " + section)</h4>
                     <ol itemprop="instructions">
-                        @foreach (var step in steps.Where(r => r["step_section"].ToString() == section)) {
-                            <li>@(step["step_description"])</li>
+                        @foreach (var step in steps.Where(r => r[step_section_field].ToString() == section)) {
+                            <li>@(step[step_desction_field])</li>
                         }
                     </ol>
                 }

@@ -7,27 +7,32 @@
 
   <connections>
     <add name="input" provider="postgresql" port="5432" database="MyDD" user="postgres" password="@(Password)" />
-    <add name="output" provider="internal" />
+    <add name="output" provider="razor" template="e:\Code\mydd\mydd\tfl\templates\steps.cshtml" file="e:\Code\mydd\mydd\tfl\output\steps.xml" />
+    <!-- <add name="output" provider="console" /> -->
   </connections>
 
-  <templates>
+  <!-- <templates>
     <add name="steps" file="e:\Code\mydd\mydd\tfl\templates\steps.cshtml" engine="razor" content-type="html">
       <actions>
         <add type="copy" mode="init" to="e:\Code\mydd\mydd\tfl\output\steps.xml" />
         <add type="open" mode="init" file="e:\Code\mydd\mydd\tfl\output\steps.xml" />
       </actions>
     </add>
-  </templates>
+  </templates> -->
+
+  <actions>
+    <add type="open" mode="init" file="e:\Code\mydd\mydd\tfl\output\steps.xml" />
+  </actions>
 
   <entities>
-    <add name="app_step" alias="Step" prefix="step_" version="modified" 
-         query="SELECT id,recipe_id,section,sequence,description,created,modified FROM app_step ORDER BY recipe_id, sequence ASC;">
+    <add name="app_step" alias="Step" prefix="step_" version="modified"
+      query="SELECT id,recipe_id,section,sequence,description,created,modified FROM app_step ORDER BY recipe_id, sequence ASC;">
       <fields>
         <add name="id" type="int32" primary-key="true" />
         <add name="recipe_id" type="int" label="recipe id" />
         <add name="section" length="128" />
         <add name="sequence" type="short" />
-        <add name="description" length="255" />
+        <add name="description" length="255" t="xmlencode()" />
         <add name="created" type="datetime" />
         <add name="modified" type="datetime" />
       </fields>
