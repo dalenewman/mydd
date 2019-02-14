@@ -5,7 +5,7 @@
       <parameters>
         <add name="Mode" value="init" />
         <add name="Folder" value="E:\Code\MyDD" />
-        <add name="Password" value="devdev1!" />
+        <add name="Password" value="*" />
       </parameters>
     </add>
   </environments>

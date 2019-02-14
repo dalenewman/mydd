@@ -2,7 +2,7 @@
 
   <parameters>
     <add name="Mode" value="init" />
-    <add name="Password" value="devdev1!" />
+    <add name="Password" value="*" />
     <add name="Folder" value="E:\Code\MyDD" />
   </parameters>
 
