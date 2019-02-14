@@ -1,5 +1,69 @@
 <ingredients>
         <add>
+            <id>10</id>
+            <content>
+                    <h4>Ingredients</h4>
+                    <ul>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">4<span class="uom"> tablespoons</span></span>
+                                <span itemprop="name"> butter</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> tablespoon</span></span>
+                                <span itemprop="name"> dried thyme</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount"><span class="uom"> </span></span>
+                                <span itemprop="name"> Salt and Pepper</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">4<span class="uom"> </span></span>
+                                <span itemprop="name"> chicken breasts</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> large</span></span>
+                                <span itemprop="name"> onion (finely chopped)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> large</span></span>
+                                <span itemprop="name"> carrots (thinly sliced)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/2<span class="uom"> lbs</span></span>
+                                <span itemprop="name"> bacon (chopped)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">4<span class="uom"> garlic cloves</span></span>
+                                <span itemprop="name"> (thinly sliced)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> cups</span></span>
+                                <span itemprop="name"> Portobello mushrooms (sliced)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1 1/2<span class="uom"> cups</span></span>
+                                <span itemprop="name"> Riesling or dry white wine</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/2<span class="uom"> cup</span></span>
+                                <span itemprop="name"> chicken stock</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">3/4<span class="uom"> cup</span></span>
+                                <span itemprop="name"> heavy cream</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">5-6<span class="uom"> springs</span></span>
+                                <span itemprop="name"> fresh thyme (chopped)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/2<span class="uom"> cup</span></span>
+                                <span itemprop="name"> flat leaf parsley (chopped)</span>
+                            </li>
+                    </ul>
+            </content>
+        </add>
+        <add>
             <id>12</id>
             <content>
                     <h4>Ingredients</h4>
@@ -85,56 +149,56 @@
                     <h4>Ingredients</h4>
                     <ul>
                             <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1/4<span class="uom"> cup</span></span>
-                                <span itemprop="name"> Fresh Parsley</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">6<span class="uom"> cloves</span></span>
-                                <span itemprop="name"> Minced Garlic</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
                                 <span itemprop="amount">4<span class="uom"> tablespoons</span></span>
                                 <span itemprop="name"> Canola Oil</span>
                             </li>
                             <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1/2<span class="uom"> teaspoon</span></span>
-                                <span itemprop="name"> Pepper</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1/2<span class="uom"> teaspoon</span></span>
-                                <span itemprop="name"> Salt</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1<span class="uom"> teaspoon</span></span>
-                                <span itemprop="name"> Dried Thyme</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">2<span class="uom"> teaspoons</span></span>
-                                <span itemprop="name"> Dried Oregano</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1<span class="uom"> </span></span>
-                                <span itemprop="name"> Large Egg</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">3/4<span class="uom"> cup</span></span>
-                                <span itemprop="name"> Breadcrumbs</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1/3<span class="uom"> cup</span></span>
-                                <span itemprop="name"> Parmesan</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">2/3<span class="uom"> cup</span></span>
-                                <span itemprop="name"> Oats</span>
+                                <span itemprop="amount">3<span class="uom"> cups</span></span>
+                                <span itemprop="name"> Chopped Mushrooms</span>
                             </li>
                             <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
                                 <span itemprop="amount">1/2<span class="uom"> cup</span></span>
                                 <span itemprop="name"> Finely Chopped Onion</span>
                             </li>
                             <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">3<span class="uom"> cups</span></span>
-                                <span itemprop="name"> Chopped Mushrooms</span>
+                                <span itemprop="amount">6<span class="uom"> cloves</span></span>
+                                <span itemprop="name"> Minced Garlic</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2/3<span class="uom"> cup</span></span>
+                                <span itemprop="name"> Oats</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/3<span class="uom"> cup</span></span>
+                                <span itemprop="name"> Parmesan</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">3/4<span class="uom"> cup</span></span>
+                                <span itemprop="name"> Breadcrumbs</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> </span></span>
+                                <span itemprop="name"> Large Egg</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/4<span class="uom"> cup</span></span>
+                                <span itemprop="name"> Fresh Parsley</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> teaspoons</span></span>
+                                <span itemprop="name"> Dried Oregano</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> teaspoon</span></span>
+                                <span itemprop="name"> Dried Thyme</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/2<span class="uom"> teaspoon</span></span>
+                                <span itemprop="name"> Salt</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/2<span class="uom"> teaspoon</span></span>
+                                <span itemprop="name"> Pepper</span>
                             </li>
                     </ul>
             </content>
@@ -145,8 +209,36 @@
                     <h4>Ingredients</h4>
                     <ul>
                             <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">4<span class="uom"> cloves</span></span>
+                                <span itemprop="name"> garlic, minced</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
                                 <span itemprop="amount">2<span class="uom"> lbs.</span></span>
                                 <span itemprop="name"> salmon filets, skinned and finely chopped</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> </span></span>
+                                <span itemprop="name"> large egg</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> tablespoon</span></span>
+                                <span itemprop="name"> soy sauce</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> zest</span></span>
+                                <span itemprop="name"> of lemon</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1⁄4<span class="uom"> cup</span></span>
+                                <span itemprop="name"> fresh parsley, chopped</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1⁄2<span class="uom"> teaspoon</span></span>
+                                <span itemprop="name"> salt &amp; pepper</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1⁄4<span class="uom"> cup</span></span>
+                                <span itemprop="name"> bread crumbs</span>
                             </li>
                             <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
                                 <span itemprop="amount">3⁄4<span class="uom"> cup</span></span>
@@ -159,34 +251,6 @@
                             <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
                                 <span itemprop="amount">3⁄4<span class="uom"> cup</span></span>
                                 <span itemprop="name"> red bell pepper, diced</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1⁄4<span class="uom"> cup</span></span>
-                                <span itemprop="name"> bread crumbs</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">4<span class="uom"> cloves</span></span>
-                                <span itemprop="name"> garlic, minced</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1⁄2<span class="uom"> teaspoon</span></span>
-                                <span itemprop="name"> salt &amp; pepper</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1⁄4<span class="uom"> cup</span></span>
-                                <span itemprop="name"> fresh parsley, chopped</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1<span class="uom"> zest</span></span>
-                                <span itemprop="name"> of lemon</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1<span class="uom"> tablespoon</span></span>
-                                <span itemprop="name"> soy sauce</span>
-                            </li>
-                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
-                                <span itemprop="amount">1<span class="uom"> </span></span>
-                                <span itemprop="name"> large egg</span>
                             </li>
                     </ul>
             </content>
@@ -541,6 +605,74 @@
                             <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
                                 <span itemprop="amount">1/4<span class="uom"> Cup</span></span>
                                 <span itemprop="name"> Chives (chopped)</span>
+                            </li>
+                    </ul>
+            </content>
+        </add>
+        <add>
+            <id>56</id>
+            <content>
+                    <h4>Ingredients</h4>
+                    <ul>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">3<span class="uom"> Teaspoons</span></span>
+                                <span itemprop="name"> Canola Oil</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> Medium</span></span>
+                                <span itemprop="name"> Fennel Bulb (chopped)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> </span></span>
+                                <span itemprop="name"> Red Peppers (chopped)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> Large</span></span>
+                                <span itemprop="name"> Yellow Onion (chopped)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> Large</span></span>
+                                <span itemprop="name"> Carrots (chopped)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">2<span class="uom"> Large</span></span>
+                                <span itemprop="name"> Celery Ribs (chopped)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">4<span class="uom"> Cloves</span></span>
+                                <span itemprop="name"> Garlic (minced)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">4-5<span class="uom"> Cups</span></span>
+                                <span itemprop="name"> Chicken Stock</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> Teaspoon</span></span>
+                                <span itemprop="name"> Dried Oregano</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/2<span class="uom"> Teaspoon</span></span>
+                                <span itemprop="name"> Dried Basil</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/2<span class="uom"> Teaspoon</span></span>
+                                <span itemprop="name"> Dried Thyme</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> Pound</span></span>
+                                <span itemprop="name"> Ground Chicken, Turkey, or Pork Sausage</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1<span class="uom"> Small Bunch</span></span>
+                                <span itemprop="name"> Kale (leaves removed, chopped)</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount">1/2<span class="uom"> Teaspoon</span></span>
+                                <span itemprop="name"> Red Pepper Flakes</span>
+                            </li>
+                            <li itemprop="ingredient" itemscope="" itemtype="http://data-vocabulary.org/RecipeIngredient">
+                                <span itemprop="amount"><span class="uom"> </span></span>
+                                <span itemprop="name"> Salt &amp; Pepper</span>
                             </li>
                     </ul>
             </content>

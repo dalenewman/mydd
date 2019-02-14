@@ -30,7 +30,7 @@
         <add name="full" type="boolean" ></add>
       </fields>
       <calculated-fields>
-        <add name="schedule_past" engine="jint" type="boolean" t="copy(schedule_date).js(var now = new Date(); schedule_date &lt; now;)" />
+        <add name="schedule_past" engine="jint" type="boolean" t="copy(schedule_date).jint(var now = new Date(); schedule_date &lt; now;)" />
       </calculated-fields>
     </add>
     

@@ -74,7 +74,7 @@
       <fields>
         <add name="class_recipes_class_id" type="int" primary-key="true" />
         <add name="recipes" length="4000" />
-        <add name="recipe_count" type="int" />
+        <add name="recipe_count" type="long" />
       </fields>
     </add>
     <add name="ScheduleStar" connection="output" alias="ClassSchedule" query="

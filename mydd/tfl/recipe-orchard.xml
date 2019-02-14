@@ -2,7 +2,7 @@
 
   <parameters>
     <add name="Mode" value="init" />
-    <add name="Password" value="*" />
+    <add name="Password" value="devdev1!" />
     <add name="Folder" value="E:\Code\MyDD" />
   </parameters>
 
@@ -22,7 +22,7 @@
   </templates>
 
   <actions>
-    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe.xml?Mode=@(Mode)&amp;Password=@(Password)&amp;Folder=@(Folder)" before="true" after="false" />
+    <add type="tfl" mode="@(Mode)" url="@(Folder)\mydd\tfl\recipe.xml?Mode=@(Mode)&Password=@(Password)&Folder=@(Folder)" before="true" after="false" />
     <add type="open" mode="init" file="@(Folder)\mydd\tfl\output\recipe-output.xml" />
   </actions>
   

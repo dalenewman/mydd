@@ -44,7 +44,7 @@
             <add name="instructor_full_name" length="128" label="instructor full name" output="false" />
             <add name="tags" length="128" output="false" />
             <add name="recipes" length="4000" output="false" />
-            <add name="recipe_count" type="int" output="false" />
+            <add name="recipe_count" type="long" output="false" />
             <add name="schedule" length="4000" output="false"/>
             <add name="next_schedule_date" type="datetime" output="false" />
             <add name="next_schedule_date_utc" type="datetime" output="false" />
@@ -57,7 +57,7 @@
             <add name="today" type="datetime" default="now/d" output="false" />
             <add name="next_schedule_date_utc_formatted" t="copy(next_schedule_date_utc).format({0:s}Z)" output="false" />
             <add name="prev_schedule_date_utc_formatted" t="copy(prev_schedule_date_utc).format({0:s}Z)" output="false" />
-            <add name="not_scheduled" t="copy(today,next_schedule_date_utc,prev_schedule_date_utc).cs(next_schedule_date_utc.Year == 9999 &amp;&amp; prev_schedule_date_utc &lt; today)" output="false" />
+            <add name="not_scheduled" t="copy(today,next_schedule_date_utc,prev_schedule_date_utc).js(next_schedule_date_utc.getYear() === 9999 && prev_schedule_date_utc < today)" output="false" />
             <add name="content" length="max" t="copy(*).velocity(class).htmlencode()" output="false" />
             <add name="blog_post" length="max" t="copy(*).velocity(blog_post)" primary-key="true" output="true" />
           </calculated-fields>

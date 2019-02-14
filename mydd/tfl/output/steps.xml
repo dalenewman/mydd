@@ -1,5 +1,25 @@
 <recipes>
        <add>
+            <id>10</id>
+            <content>
+                    <h4>Directions</h4>
+                    <ol itemprop="instructions">
+                            <li>In a large skillet, over medium heat, melt the butter.</li>
+                            <li>Sprinkle thyme, salt &amp; pepper evenly over the chicken.</li>
+                            <li>Add the chicken to pan and brown on both sides, approx. 4 minutes per side.</li>
+                            <li>Remove the chicken to a plate. (Chicken does not need to be cooked through).</li>
+                            <li>Add the onions, carrot and bacon to the pan and saut&#233; until the bacon fat has rendered.</li>
+                            <li>Add the garlic and mushrooms, saut&#233; another 3 minutes.</li>
+                            <li>Add the chicken back to the pan, pour in the wine and allow everything to come to a boil.</li>
+                            <li>Turn the heat down to simmer and cover, leaving a little room for steam to escape.</li>
+                            <li>Simmer 10 minutes, thoroughly cooking chicken, until internal temp reaches 165 degrees.</li>
+                            <li>Add chicken stock and cream, turn up heat to medium and cook another 10 minutes, uncovered, allowing the sauce to thicken.</li>
+                            <li>Stir in fresh thyme, sprinkle the chopped parsley, add salt and pepper to taste.</li>
+                            <li>Serve alone, over rice or noodles.</li>
+                    </ol>
+            </content>
+        </add>
+       <add>
             <id>12</id>
             <content>
                     <h4>Directions</h4>
@@ -170,6 +190,26 @@
                             <li>Stir in half and half, the shredded chicken and bacon.</li>
                             <li>Cook another 10 minutes.</li>
                             <li>Season with salt and pepper; add the copped chives and serve!</li>
+                    </ol>
+            </content>
+        </add>
+       <add>
+            <id>56</id>
+            <content>
+                    <h4>Directions</h4>
+                    <ol itemprop="instructions">
+                            <li>Add sausage to the blended vegetables, along with kale.</li>
+                            <li>Using an immersion blender, lower into stock pot and pulse 10 times, blending all the ingredients. The soup can also be added to a blender and blended well.</li>
+                            <li>Cook to brown the sausage, stir in red pepper flakes. Set aside.</li>
+                            <li>Meanwhile, in medium skillet, over medium heat, add the sausage.</li>
+                            <li>Increase the heat to high. Simmer 15 minutes.</li>
+                            <li>Season with salt and pepper.</li>
+                            <li>Stir in the garlic, cook for 1 minute.</li>
+                            <li>Add the onion, carrot, and celery to the pot. Saute another 5-8 minutes.</li>
+                            <li>Once the oil is hot, fennel, and red pepper, season with salt and pepper. Saute 5 minutes, allowing the fennel to brown.</li>
+                            <li>In a large stock pot, over medium high heat, add the oil.</li>
+                            <li>Add the chicken stock, oregano, basil, and thyme,</li>
+                            <li>*As a second meal, pour over a bed of boiled penne pasta and add fresh Parmesan cheese.</li>
                     </ol>
             </content>
         </add>
